@@ -1,76 +1,62 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-    <link rel="stylesheet" href="css/index.css"/>
-    <title></title>
-    <script type="text/javascript" lang="javascript">
-        hamburger = document.querySelector(".hamburger")
-        hamburger.onclick = function() {
-            navbar = document.querySelector("nav");
-            navbar.classList.toggle("active")
-        }
-        
-        const select=dropdown.querySelector(".select");
-        const caret=dropdown.querySelector(".caret");
-        const menu=dropdown.querySelector(".menu");
-        const options=dropdown.querySelector(".menu li");
-        const selected=dropdown.querySelector(".selected");
-        select.addEventListener('click',()=>
-        {
-            select.classList.toggle('select-click');
-            caret.classList.toggle('caret-rotate');
-            menu.classList.toggle('menu-open');    
-        });
-
-        options.forEach(option=>{
-            option.addEventListener('click',()=>{
-                selected.innerText=option.innerText;
-                select.classList.remove('select-clicked');
-                caret.classList.remove('caret-rotate');
-                menu.classList.remove('menu-open');
-                options.forEach(option=>{
-                    options.classList.remove('active');
-                });
-                option.classList.add('active');
-            });
-        });
-    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap"
+        rel="stylesheet">
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- BOX ICONS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- APP CSS -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <!-- Scripts -->
+    <!-- FONT AWESOME ICONS-->
+    <script src="https://kit.fontawesome.com/873abd78fb.js" crossorigin="anonymous"></script>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- OWl Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="JS/main.js"></script>
+    <title>ReadRover - Online Book Reader</title>
 </head>
 <body>
-    <header>
-        <div class="logo">ReadRover</div>
-        <div class="hamburger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
+    <!-- NAVBAR -->
+    <div class="nav-wrapper">
+        <div class="container">
+            <div class="nav">
+                <a href="#" class="logo">
+                    <i class='bx bxs-bookmark-alt bx-tada-hover' style="color: rgb(139, 139, 11);"></i><span class="main-color">R</span>ead<span class="main-color">R</span>over
+                </a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#" class="bx-tada-hover">Genre<i class='bx bx-xm bx-chevron-down bx-tada-hover'></i></a></li>
+                    <li><a href="#">My Books</a></li>
+                    <li><a href="#"><i class='bx bx-search-alt ' style="color:greenyellow;"></i>Searchbar</a></li>                    
+                    <li>
+                        <a href="#" class="btn btn-hover">
+                            <span><i class="fa-solid fa-circle-user fa-xl"></i></span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- MOBILE MENU TOGGLE -->
+                <div class="hamburger-menu" id="hamburger-menu">
+                    <div class="hamburger"></div>
+                </div>
+            </div>
         </div>
-        <nav class="nav-bar">
-            <ul>
-                <li>
-                    <a href="" class="active">Home</a>
-                </li>
-                <li>
-                    <div class="dropdown">
-                        <div class="select">
-                            <span class="selected">Geners</span>
-                            <div class="caret"></div>                            
-                        </div>
-                        <ul class="menu">
-                            <li>Fiction</li>
-                            <li>Literature</li>
-                            <li>Drama</li>
-                        </ul>
-                    </div>
-                </li>
-                <li><a href="">Searchbar</a></li>
-                <li><a href="">Log in </a></li>
-                <li><a href="">Sign Up</a></li>
-            </ul>
-        </nav>
-    </header>    
+    </div>
+    <!-- END NAV -->    
 </body>
-</html>
 
+</html>
