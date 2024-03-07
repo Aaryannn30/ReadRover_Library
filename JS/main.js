@@ -3,15 +3,36 @@ $(document).ready(() => {
         $('#hamburger-menu').toggleClass('active')
         $('#nav-menu').toggleClass('active')
     })
+    
+    let navText = ["<i class='bx bxs-right-arrow-circle bx-flip-horizontal' ></i>", "<i class='bx bxs-right-arrow-circle bx-flip-vertical' ></i>"]
 
     $('#main-carousel').owlCarousel({
         items: 1,
         dots: false,
         loop: true,
         nav: true,
-        navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'], // Adjust navigation icons as needed,
+        navText: navText, // Adjust navigation icons as needed,
         autoplay: true,
         autoplayHoverPause: true
+    })
+
+    $('.books-slide').owlCarousel({
+        items: 2,
+        dots: false,
+        nav:true,
+        navText: navText,
+        margin: 15,
+        responsive: {
+            500: {
+                items: 2
+            },
+            1280: {
+                items: 4
+            },
+            1600: {
+                items: 6
+            }
+        }
     })
 
     // JavaScript to handle adding books to the wishlist

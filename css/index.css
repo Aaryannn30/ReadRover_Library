@@ -1,7 +1,7 @@
 :root {
-    --main-color: #03b3f4;
-    --body-bg: #181616;
-    --box-bg: #221f1f;
+    --main-color: #892CDC;
+    --body-bg: #000000;
+    --box-bg: #BC6FF1;
     --text-color: #ffffff;
 
     --nav-height: 70px;
@@ -24,7 +24,7 @@ body
     background-color: var(--body-bg);
     color: var(--text-color);
     padding-top: var(--nav-height);
-    background-color: grey;
+    background-color: var(--body-bg);
 }
 
 a {
@@ -61,7 +61,7 @@ img {
     left: 0;
     width: 100%;
     z-index: 99;
-    background-color: #0F4C75;
+    background-color: #52057B;
 }
 
 .nav {
@@ -105,7 +105,7 @@ img {
 
 .nav-menu a.btn:hover,
 a.logo:hover,
-a.movie-item:hover {
+a.book-item:hover {
     color: unset;
 }
 
@@ -118,6 +118,7 @@ a.movie-item:hover {
     display: inline-flex;
     position: relative;
     align-items: center;
+    margin-left: -30px;
 }
 
 .btn-hover::before {
@@ -132,7 +133,8 @@ a.movie-item:hover {
     transition: 0.3s ease-out;
 }
 
-.btn-hover:hover::before {
+
+li .btn-hover:hover::before {
     width: 70%; 
     height: 10%;   
 }
@@ -204,10 +206,6 @@ a.movie-item:hover {
 
 /* Search-Bar */
 
-/* ul li .search{
-    position: relative;    
-    justify-items: center;
-} */
 
 form{
     position: relative;
@@ -250,7 +248,7 @@ input{
     top: 0;
     right: 0;
     border-radius: 50%;
-    color: #8c52ff;
+    color: var(--main-color);
     text-align: center;
     font-size: 1.2em;
     transition: all 1s;
@@ -266,7 +264,7 @@ form:hover input{
 }
 
 form:hover a .fa{
-    background: #8c52ff;
+    background: var(--main-color);
     color: white;
 }
 
@@ -391,6 +389,13 @@ form:hover a .fa{
     border-radius: 20px;
     background-color: #ffc107;
     color: #fff; 
+    transition: 0.8s;
+}
+
+.delay-info .btn:hover,
+.delay-read .btn:hover {    
+    background-color: var(--main-color);
+    color: #000000; 
 }
 
 .delay-info .btn i,
@@ -410,6 +415,76 @@ form:hover a .fa{
     opacity: 1;
 }
 
+/*for Trending Books Slider*/
+
+.book-item {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    padding-top: 140%;
+    cursor: pointer;
+}
+
+.book-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: transform 0.3s linear;
+}
+
+.book-item:hover img {
+    transform: scale(1.2);
+}
+
+.book-item-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.book-item-content::before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+}
+
+.book-item-title {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    position: relative;
+    font-weight: 700;
+}
+
+/* to get space between main carousel and trending section */
+/* .section {
+    padding-top: 80px; 
+} */
+
+.section-header {
+    margin-left: 45px;
+    padding-left: 10px;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-left: 10px solid var(--main-color);
+    display: flex;
+    align-items: center;
+}
+
+.section .container {
+    max-width: 1920px;
+    padding: 0 15px;
+    margin: auto;
+}
+
 
 /* RESPONSIVE */
 
@@ -418,7 +493,7 @@ form:hover a .fa{
         font-size: 14px;
     }
 
-    .hero-slide-item {
+    .main-slide-item {
         padding-top: 50%;
     }
 
@@ -436,7 +511,7 @@ form:hover a .fa{
         padding: 0 15px;
     }
 
-    .hero-slide-item {
+    .main-slide-item {
         height: max-content;
         padding-top: unset;
     }
@@ -449,11 +524,11 @@ form:hover a .fa{
         background-color: rgba(0, 0, 0, 0.2);
     }
 
-    .hero-slide-item-content {
+    .main-slide-item-content {
         position: relative;
     }
 
-    .hero-slide-item img {
+    .main-slide-item img {
         height: 100%;
     }
 
