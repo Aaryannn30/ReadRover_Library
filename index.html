@@ -28,21 +28,30 @@
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="JS/main.js"></script>
+    <script src="JS/searchbar.js"></script>
     <title>ReadRover - Online Book Reader</title>
 </head>
+
 <body>
     <!-- NAVBAR -->
     <div class="nav-wrapper">
         <div class="container">
             <div class="nav">
                 <a href="#" class="logo">
-                    <i class='bx bxs-bookmark-alt bx-tada-hover' style="color: rgb(139, 139, 11);"></i><span class="main-color">R</span>ead<span class="main-color">R</span>over
+                    <i class='bx bxs-bookmark-alt bx-tada-hover' style="color: rgb(139, 139, 11);"></i><span
+                        class="main-color">R</span>ead<span class="main-color">R</span>over
                 </a>
                 <ul class="nav-menu" id="nav-menu">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#" class="bx-tada-hover">Genre<i class='bx bx-xm bx-chevron-down bx-tada-hover'></i></a></li>
+                    <li><a href="#" class="bx-tada-hover">Genre<i
+                                class='bx bx-xm bx-chevron-down bx-tada-hover'></i></a></li>
                     <li><a href="#">My Books</a></li>
-                    <li><a href="#"><i class='bx bx-search-alt ' style="color:greenyellow;"></i>Searchbar</a></li>                    
+                    <li>
+                        <div class="search-box">
+                            <input type="search" class="search-txt" name="" placeholder="Type something..." style="font-family: 'Cairo', sans-serif;" />
+                            <a class="search-btn" href="#"><i class='bx bx-search-alt'></i></a>
+                        </div>
+                    </li>
                     <li>
                         <a href="#" class="btn btn-hover">
                             <span><i class="fa-solid fa-circle-user fa-xl"></i></span>
@@ -56,7 +65,7 @@
             </div>
         </div>
     </div>
-    <!-- END NAV -->    
+    <!-- END NAV -->
 </body>
 
 </html>

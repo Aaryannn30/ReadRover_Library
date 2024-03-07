@@ -1173,3 +1173,99 @@ HTML Code
             </div>
         </div>
     </div>
+
+    search Bar alternate
+
+    .search-wrapper {
+    display: flex;
+    /* flex-direction: column; */
+    gap: .25rem;
+    margin-top: 12px;
+    height: 30px;
+    cursor: pointer;
+    padding: 10px 20px;
+    /* background: #ffffff; */
+    /* border-radius: 30px; */
+    align-items: center;    
+  }
+
+  .search-wrapper:hover input{
+    width: 400px;
+  }
+
+  .search-wrapper input{
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);           
+  }
+  
+  /* .search{
+    
+  }  */
+  
+  .search-wrapper input:hover,.search-wrapper input a:hover{
+    border: none;
+    font-size: 1rem;
+    border-radius: 30px;
+    background-color:#ffffff;
+    padding: 2.5px 5px;    
+    margin-bottom: 6px;
+  }
+
+  .search-wrapper a
+  {
+    background: #03b3f4;
+    border-radius: 60px;
+    flex-wrap: nowrap;
+  }
+
+  .search-wrapper a .fas
+  {
+    color:#ffffff;
+    font-size: 18px;
+    height: 30px;
+    width: 70px;
+  }
+  
+  .user-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: .25rem;
+    margin-top: 1rem;
+  }
+  
+  .card {
+    border: 1px solid rgb(0, 16, 239);
+    background-color: white;
+    padding: .5rem;
+  }
+  
+  .card > .header {
+    margin-bottom: .25rem;
+  }
+  
+  .card > .body {
+    font-size: .8rem;
+    color: #777;
+  }
+  
+  .hide {
+    display: none;
+  }
+
+   <div class="search-wrapper">                                
+                                <input type="search" id="search" placeholder="Type Something..." data-search></i>
+                                <a href="#"><i class='bx bx-search-alt'></i></a>
+                            </div>
+                            <div class="user-cards" data-user-cards-container></div>
+                            <template data-user-template>
+                                <div class="card">
+                                    <div class="header" data-header></div>
+                                    <div class="body" data-body></div>
+                                </div>
+                            </template>
+                        </a>
