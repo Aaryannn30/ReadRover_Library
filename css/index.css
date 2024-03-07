@@ -24,6 +24,7 @@ body
     background-color: var(--body-bg);
     color: var(--text-color);
     padding-top: var(--nav-height);
+    background-color: grey;
 }
 
 a {
@@ -201,60 +202,6 @@ a.movie-item:hover {
     left: 6px;
 }
 
-/* SearchBar CSS */
-.search-box{
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background: var(--main-color);
-    height: 40px;
-    border-radius: 40px;
-    padding: 10px;
-    margin-top: 45px;
-}
-
-.search-box:hover > .search-txt{
-    width: 240px;
-   padding: 0 6px;  
-
-}
-
-.search-box:hover > .search-btn{
-    background: white;
-    color: var(--main-color);
-}
-
-.search-btn{
-    columns: #ffffff;
-    float: right;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: var(--main-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.4s;
-}
-
-.search-txt{
-    border: none;
-    background: none;
-    outline: none;
-    float: left;
-    padding: 0%;
-    color: white;
-    font-size: 16px;
-    transition: 0.4s;
-    line-height: 40px;
-    width: 0;
-}
-
-.search-box input{
-    position: relative;
-    margin-bottom: 25px;
-}
 
 
 /* RESPONSIVE */
