@@ -268,7 +268,7 @@ form:hover a .fa {
     color: white;
 }
 
-/* CAROUSEL */
+/* carousel css */
 
 .main-slide-item {
     padding-top: 40%;
@@ -417,6 +417,212 @@ form:hover a .fa {
     visibility: visible;
     opacity: 1;
 }
+
+/* For Deslide poster */
+/* .main-slide-item-content .deslide-poster {
+    position: absolute;
+   
+    
+    width: 400px;
+    
+    
+} */
+
+.main-slide-item-content .deslide-poster{
+    display: inline-block;
+    top: -95px;
+    left: 550px;
+    transform: scale(1.2);
+    transform: rotate(15deg);
+    border: 20px solid #fff;
+    box-shadow: 0 30px 30px rgba(0, 0, 0, .2);
+    width: 500px;    
+    height: 100px;    
+    margin-top: 40px;
+    padding-bottom: 140%;
+    position: absolute;
+    overflow:hidden;
+    background: #eee;
+    opacity: 1;
+}
+
+/* .manga-poster {
+    
+} */
+
+.book-poster .book-poster-img {
+    position: relative;
+    width: 380px;
+    height: 600px;
+    object-fit:contain;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all .5s ease 0s;
+    -webkit-transition: all .5s ease 0s;
+    -moz-transition: all .5s ease 0s;
+    /* overflow-clip-margin: content-box;
+    overflow: clip;
+    vertical-align: middle;
+    border-style: none; */
+}
+
+/* .manga-poster-img {
+    
+} */
+
+
+/*for Trending/Recommended Books Slider*/
+
+.book-item {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    padding-top: 140%;
+    cursor: pointer;
+}
+
+.book-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: transform 0.3s linear;
+}
+
+.book-item:hover img {
+    transform: scale(1.2);
+}
+
+.book-item-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.book-item-content::before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+}
+
+.book-item-title {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    position: relative;
+    font-weight: 700;
+}
+
+/* to get space between main carousel and trending section */
+/* .section {
+    padding-top: 80px; 
+} */
+
+.section-header {
+    margin-left: 45px;
+    padding-left: 10px;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-left: 10px solid var(--main-color);
+    display: flex;
+    align-items: center;
+}
+
+.section .container {
+    max-width: 1920px;
+    padding: 0 15px;
+    margin: auto;
+}
+
+/* FOOTER */
+
+.container{
+    max-width: 1170px;
+    margin:auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.footer{
+    background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #03b3f4;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+.copyright {
+    padding: 10px;
+    border-top: 1px solid var(--body-bg);
+    background-color: grey;
+    text-align: center;
+}
+
 
 /* RESPONSIVE */
 
