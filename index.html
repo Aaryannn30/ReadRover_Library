@@ -28,22 +28,31 @@
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="JS/main.js"></script>
+    <script src="JS/searchbar.js"></script>
 
     <title>ReadRover - Online Book Reader</title>
 </head>
+
 <body>
     <!-- NAVBAR -->
     <div class="nav-wrapper">
         <div class="container">
             <div class="nav">
                 <a href="#" class="logo">
-                    <i class='bx bxs-bookmark-alt bx-tada-hover' style="color: rgb(139, 139, 11);"></i><span class="main-color">R</span>ead<span class="main-color">R</span>over
+                    <i class='bx bxs-bookmark-alt bx-tada-hover' style="color: #FFF67E;"></i><span
+                        class="main-color">R</span>ead<span class="main-color">R</span>over
                 </a>
                 <ul class="nav-menu" id="nav-menu">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#" class="bx-tada-hover">Genre<i class='bx bx-xm bx-chevron-down bx-tada-hover'></i></a></li>
+                    <li><a href="#" class="bx-tada-hover">Genre<i
+                                class='bx bx-xm bx-chevron-down bx-tada-hover'></i></a></li>
                     <li><a href="#">My Books</a></li>
-                    <li><a href="#"><i class='bx bx-search-alt ' style="color:greenyellow;"></i>Searchbar</a></li>                    
+                    <li class="search">
+                        <form action="">
+                            <input type="search" placeholder="Search here ...">
+                            <a href="#"><i class="fa fa-search"></i></a>
+                        </form>
+                    </li>
                     <li>
                         <a href="#" class="btn btn-hover">
                             <span><i class="fa-solid fa-circle-user fa-xl"></i></span>
@@ -58,10 +67,10 @@
         </div>
     </div>
     <!-- END NAV -->
-    
-    <!-- CAROUSEL -->
-     <!-- MAIN SECTION -->
-     <div class="main-section">
+
+    <!-- MAIN CAROUSEL -->
+    <!-- MAIN SECTION -->
+    <div class="main-section">
         <!-- MAIN SLIDE -->
         <div class="main-slide">
             <div class="owl-carousel carousel-nav-center" id="main-carousel">
@@ -89,6 +98,11 @@
                                     <span>Add to Wishlist</span>
                                 </a>
                             </div>
+                        </div>
+                        <div class="deslide-poster">
+                            <a href="#" class="book-poster">
+                                <img src="Book-Covers/cover-1.jpg" class="book-poster-img"/>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -118,6 +132,11 @@
                                 </a>
                             </div>
                         </div>
+                        <div class="deslide-poster">
+                            <a href="book link here" class="book-poster">
+                                <img src="Book-Covers/cover-2.jpg" class="book-poster-img"/>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <!-- END SLIDE ITEM -->
@@ -146,6 +165,11 @@
                                 </a>
                             </div>
                         </div>
+                        <div class="deslide-poster">
+                            <a href="book link here" class="book-poster">
+                                <img src="Book-Covers/cover-3.jpg" class="book-poster-img"/>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <!-- END SLIDE ITEM -->
@@ -155,57 +179,6 @@
     </div>
     <!-- END MAIN SECTION -->
     <!-- END CAROUSEL -->
-
-    <!-- FOOTER SECTION -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="footer-col">
-                    <h4>About Us</h4>
-                    <ul>
-                        <li><a href="#">Our Story</a></li>
-                        <li><a href="#">Our Services</a></li>
-                        <li><a href="#">Our Team</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Help & Support</h4>
-                    <ul>
-                        <li><a href="#">FAQS</a></li>
-                        <li><a href="#">Troubleshooting Guide</a></li>
-                        <li><a href="#">Feedback & Suggestions</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Policies</h4>
-                    <ul>
-                        <li><a href="#">Terms of Service</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Copyright Information</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Connect With Us</h4>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-   </footer>
-    <!-- END FOOTER SECTION -->
-
-
-    <!-- COPYRIGHT SECTION -->
-    <div class="copyright">
-        <a href="#" target="_blank">
-            © ReadRover</a>
-    </div>
-    <!-- END COPYRIGHT SECTION -->
-
 </body>
 
 </html>

@@ -3,39 +3,60 @@ $(document).ready(() => {
         $('#hamburger-menu').toggleClass('active')
         $('#nav-menu').toggleClass('active')
     })
+    
+    let navText = ["<i class='bx bxs-right-arrow-circle bx-flip-horizontal' ></i>", "<i class='bx bxs-right-arrow-circle bx-flip-vertical' ></i>"]
 
     $('#main-carousel').owlCarousel({
         items: 1,
         dots: false,
         loop: true,
-        nav:true,
-        navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'], // Adjust navigation icons as needed,
+        nav: true,
+        navText: navText, // Adjust navigation icons as needed,
         autoplay: true,
         autoplayHoverPause: true
     })
 
-// JavaScript to handle adding books to the wishlist
-$(document).ready(() => {
-    $('.add-to-wishlist').click(function(event) {
-        event.preventDefault();
-        var bookId = $(this).data('book-id');
-        addToWishlist(bookId);
-    });
-
-    function addToWishlist(bookId) {
-        // Example: Send an AJAX request to add the book to the wishlist
-        $.ajax({
-            url: '/wishlist/add',
-            type: 'POST',
-            data: { bookId: bookId },
-            success: function(response) {
-                alert('Book added to wishlist!');
+    $('.books-slide').owlCarousel({
+        items: 2,
+        dots: false,
+        nav:true,
+        navText: navText,
+        margin: 15,
+        responsive: {
+            500: {
+                items: 2
             },
-            error: function(xhr, status, error) {
-                console.error('Error adding book to wishlist:', error);
+            1280: {
+                items: 4
+            },
+            1600: {
+                items: 6
             }
+        }
+    })
+
+    // JavaScript to handle adding books to the wishlist
+    $(document).ready(() => {
+        $('.add-to-wishlist').click(function (event) {
+            event.preventDefault();
+            var bookId = $(this).data('book-id');
+            addToWishlist(bookId);
         });
-    }
-});
+
+        function addToWishlist(bookId) {
+            // Example: Send an AJAX request to add the book to the wishlist
+            $.ajax({
+                url: '/wishlist/add',
+                type: 'POST',
+                data: { bookId: bookId },
+                success: function (response) {
+                    alert('Book added to wishlist!');
+                },
+                error: function (xhr, status, error) {
+                    console.error('Error adding book to wishlist:', error);
+                }
+            });
+        }
+    });
 })
 
