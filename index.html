@@ -29,7 +29,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="JS/main.js"></script>
     <script src="JS/searchbar.js"></script>
-
+    <script>
+        
+    </script>
     <title>ReadRover - Online Book Reader</title>
 </head>
 
@@ -44,8 +46,41 @@
                 </a>
                 <ul class="nav-menu" id="nav-menu">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#" class="bx-tada-hover">Genre<i
-                                class='bx bx-xm bx-chevron-down bx-tada-hover'></i></a></li>
+                    <li onclick="genreMenu()"><a href="#" class="bx-tada-hover">Genre
+                            <i class='bx bx-xm bx-chevron-down bx-tada-hover'></i>
+                        </a>
+                        <div class="genre-wrap" id="genMenu">
+                            <div class="genre-menu">
+                                <div class="gen-info">
+                                    <a href="#"class="genre-menu-link">
+                                        <i class="fa-regular fa-circle-dot" style="color: #179fd0;"></i>
+                                        <p>Drama</p>
+                                        <span><i class='bx bx-chevron-right bx-flip-vertical'></i></span>
+                                    </a>
+                                    <a href="#" class="genre-menu-link">
+                                        <i class="fa-regular fa-circle-dot" style="color: #179fd0;"></i></i>
+                                        <p>Fiction</p>
+                                        <span><i class='bx bx-chevron-right bx-flip-vertical'></i></span>
+                                    </a>
+                                    <a href="#" class="genre-menu-link">
+                                        <i class="fa-regular fa-circle-dot" style="color: #179fd0;"></i>
+                                        <p>Child Literature</p>
+                                        <span><i class='bx bx-chevron-right bx-flip-vertical'></i></span>
+                                    </a>
+                                    <a href="#" class="genre-menu-link">
+                                        <i class="fa-regular fa-circle-dot" style="color: #179fd0;"></i></i>
+                                        <p>Science Friction</p>
+                                        <span><i class='bx bx-chevron-right bx-flip-vertical'></i></span>
+                                    </a>
+                                    <a href="#" class="genre-menu-link">
+                                        <i class="fa-regular fa-circle-dot" style="color: #179fd0;"></i>
+                                        <p>Adult Literature</p>
+                                        <span><i class='bx bx-chevron-right bx-flip-vertical'></i></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
                     <li><a href="#">My Books</a></li>
                     <li class="search">
                         <form action="">
@@ -54,8 +89,34 @@
                         </form>
                     </li>
                     <li>
-                        <a href="#" class="btn btn-hover">
-                            <span><i class="fa-solid fa-circle-user fa-xl"></i></span>
+                        <a href="#" class="btn btn-hover" onclick="profileMenu()">
+                            <span><i class="fa-solid fa-circle-user fa-2xl"></i></span>
+                            <div class="profile-wrap" id="subMenu">
+                                <div class="profile-menu">
+                                    <div class="user-info">
+                                        <a href="#" class="profile-menu-link">
+                                            <i class='bx bxs-user' style='color:#b4b6c9'></i>
+                                            <p>Your Profile</p>
+                                            <span><i class='bx bx-chevron-right bx-flip-vertical'></i></span>
+                                        </a>
+                                        <a href="#" class="profile-menu-link">
+                                            <i class='bx bxs-book-open' style='color:#f9950a'></i>
+                                            <p>All Books</p>
+                                            <span><i class='bx bx-chevron-right bx-flip-vertical'></i></span>
+                                        </a>
+                                        <a href="#" class="profile-menu-link">
+                                            <i class='bx bxs-book-heart' style='color:#2136f7'></i>
+                                            <p>Wishlist</p>
+                                            <span><i class='bx bx-chevron-right bx-flip-vertical'></i></span>
+                                        </a>
+                                        <a href="#" class="profile-menu-link">
+                                            <i class='bx bx-log-out-circle bx-flip-vertical' style='color:#fd0000'></i>
+                                            <p>logout</p>
+                                            <span><i class='bx bx-chevron-right bx-flip-vertical'></i></span>
+                                        </a>    
+                                    </div>
+                                </div>
+                            </div>
                         </a>
                     </li>
                 </ul>
@@ -101,7 +162,7 @@
                         </div>
                         <div class="deslide-poster">
                             <a href="#" class="book-poster">
-                                <img src="Book-Covers/cover-1.jpg" class="book-poster-img"/>
+                                <img src="Book-Covers/cover-1.jpg" class="book-poster-img" />
                             </a>
                         </div>
                     </div>
@@ -134,7 +195,7 @@
                         </div>
                         <div class="deslide-poster">
                             <a href="book link here" class="book-poster">
-                                <img src="Book-Covers/cover-2.jpg" class="book-poster-img"/>
+                                <img src="Book-Covers/cover-2.jpg" class="book-poster-img" />
                             </a>
                         </div>
                     </div>
@@ -167,7 +228,7 @@
                         </div>
                         <div class="deslide-poster">
                             <a href="book link here" class="book-poster">
-                                <img src="Book-Covers/cover-3.jpg" class="book-poster-img"/>
+                                <img src="Book-Covers/cover-3.jpg" class="book-poster-img" />
                             </a>
                         </div>
                     </div>
@@ -564,8 +625,8 @@
                 </div>
             </div>
         </div>
-   </footer>
-   <!-- END FOOTER -->
+    </footer>
+    <!-- END FOOTER -->
 
     <!-- COPYRIGHT SECTION -->
     <div class="copyright">
