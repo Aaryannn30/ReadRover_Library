@@ -144,8 +144,31 @@ li .btn-hover:hover::before {
 }
 
 .btn i {
-    margin-right: 1rem;
-    margin-bottom: 1rem;
+    margin-right: 1rem;    
+}
+
+li .log, li .sign{
+    position: relative;
+    border: none;
+    background-color: var(--main-color);
+    padding: 10px 15px;
+    border-radius:10px;
+    transition: 0.2s;
+}
+li .log
+{
+    background-color: #BC6FF1;
+    margin-left: -40px;
+    margin-right: -5px ;
+}
+
+li .sign{
+    margin-right: -20px;
+}
+
+
+li .log:hover , li .sign:hover{    
+    background-color: #525252;    
 }
 
 /* Profile Dropdown*/
