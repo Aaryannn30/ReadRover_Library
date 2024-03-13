@@ -61,7 +61,14 @@ body {
 	font-size: 30px;
 }
 
+#dashboard {
+    margin-left: 270px; /* Adjust based on sidebar width */
+    padding: 20px;
+}
 
+.dashboard-section {
+    display: none;
+}
 
 /* SIDEBAR */
 #sidebar {
