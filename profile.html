@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,8 +24,9 @@
 				document.write("Cancel")
 			}
 		}
-   </script> -->
+ </script> -->
 </head>
+
 <body>
 
 
@@ -37,7 +39,7 @@
 		<ul class="side-menu top">
 			<li class="active">
 				<a href="#">
-					<i class='bx bxs-dashboard' ></i>
+					<i class='bx bxs-dashboard'></i>
 					<span class="text">My Profile</span>
 				</a>
 			</li>
@@ -45,25 +47,25 @@
 			<li>
 				<span class="text1">Reading Activity</span>
 			</li>
-            <li>
+			<li>
 				<a href="#">
 					<i class='bx bxs-book-alt'></i>
 					<span class="text">All Books</span>
 				</a>
 			</li>
-            <li>
+			<li>
 				<a href="#">
 					<i class='bx bx-book-reader'></i>
 					<span class="text">Currently Reading</span>
 				</a>
 			</li>
-            <li>
+			<li>
 				<a href="#">
-					<i class='bx bxs-book-reader' ></i>
+					<i class='bx bxs-book-reader'></i>
 					<span class="text">Already Read</span>
 				</a>
 			</li>
-            <li>
+			<li>
 				<a href="#">
 					<i class='bx bxs-book-heart'></i>
 					<span class="text">Want to Read</span>
@@ -77,14 +79,32 @@
 				<a href="logout.html" class="logout">
 					<i class='bx bxs-log-out-circle'></i>
 					<span class="text">Logout</span>
-					
+
 				</a>
 			</li>
 		</ul>
 	</section>
 	<!-- SIDEBAR -->
-	
+
+	<!-- Log Out Pop-up -->
+	<section class="logpop">
+		<button class="show-modal">Logout</button>
+		<span class="overlay"></span>
+
+		<div class="modal-box">
+			<i class="fa-regular fa-circle-check"></i>
+			<h2>Completed</h2>
+			<h3>You have sucessfully logout.</h3>
+
+			<div class="buttons">
+				<button class="close-btn">Cancel</button>
+				<button>OK</button>
+			</div>
+		</div>
+	</section>
+
 
 	<script src="profile.js"></script>
 </body>
+
 </html>
