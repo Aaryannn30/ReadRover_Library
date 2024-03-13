@@ -5,20 +5,26 @@
 }
 
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;    
-    /* filter: blur(5px); */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;        
+    -moz-filter:blur(5px);
 }
 
 .bg
-{
+{    
     background: url("bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    
+    background-position: center center;
+    /* backdrop-filter: blur(5px); */
+    /* -webkit-background-size:cover; */
+    filter: blur(5px);    
+    height: 100%;
+    z-index: -1;
 }
 
 .container {        
-    z-index: 100;
+    position: absolute;
+    z-index: 5;    
     width: 100%;
     height: 100vh;
     display: flex;
@@ -26,8 +32,7 @@ body {
     justify-content: center;    
 }
 
-.main {
-    
+.main {    
     position: relative;
     display: flex;
     flex-direction: column;
@@ -91,12 +96,12 @@ label {
 .register {
     background: #eee;
     border-radius: 60% / 10%;
-    transition: .8s ease-in-out;
+    transition: 0.8s ease-in-out;
 }
 
 .register label {
     color: #573b8a;
-    transform: scale(.6);
+    transform: scale(0.6);
 }
 
 #chk:checked ~ .register {
@@ -105,11 +110,11 @@ label {
 
 #chk:checked ~ .register label {
     transform: scale(1);
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
 }
 
 #chk:checked ~ .login label {
-    transform: scale(.6);
+    transform: scale(0.6);
 }   
 
 /*Button*/
