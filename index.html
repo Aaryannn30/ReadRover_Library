@@ -1,52 +1,644 @@
-<<<<<<< HEAD
-<p>Hello</p>
-<<<<<<< HEAD
-<h1>Hello</h1>
-    <h6>Priyanshi</h6>
-    <h1>hhhhhhhh</h1>
-    <h1>rrrrr</h1>
-    <h1>heyy</h1>
-=======
-<h1>Hi Fenny</h1>
->>>>>>> 3583eec8ec7c954444b2ef067ff3fa8bb92dc529
-=======
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"> 
+
+<head>    
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-    <link rel="stylesheet" href="css/index.css"/>
-    <title></title>
-    <!-- <script type="text/javascript" lang="javascript">
-        hamburger = document.querySelector(".hamburger")
-        hamburger.onclick = function() {
-            navbar = document.querySelector("nav");
-            navbar.classList.toggle("active")
-        }        
-    </script> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title Icon -->
+    <link rel="shortcut icon" type="x-icon" href="Book-Covers/Title-Icon/book-alt-solid-24.png"
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap"
+        rel="stylesheet">
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- BOX ICONS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- APP CSS -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <!-- Scripts -->
+    <!-- FONT AWESOME ICONS-->
+    <script src="https://kit.fontawesome.com/873abd78fb.js" crossorigin="anonymous"></script>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- OWl Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="JS/main.js"></script>
+    <script src="JS/searchbar.js"></script>    
+    <title>ReadRover - Online Book Reader</title>
 </head>
+
 <body>
-    <header>
-        <div class="logo">ReadRover</div>
-        <div class="hamburger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
+    <!-- NAVBAR -->
+    <div class="nav-wrapper">
+        <div class="container">
+            <div class="nav">
+                <a href="#" class="logo">
+                    <i class='bx bxs-bookmark-alt bx-tada-hover' style="color: #FFF67E;"></i><span
+                        class="main-color">R</span>ead<span class="main-color">R</span>over
+                </a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#">Home</a></li>
+                    <li onclick="genreMenu()"><a href="#" class="bx-tada-hover">Genre
+                            <i class='bx bx-xm bx-chevron-down bx-tada-hover'></i>
+                        </a>
+                        <div class="genre-wrap" id="genMenu">
+                            <div class="genre-menu">
+                                <div class="gen-info">
+                                    <a href="#"class="genre-menu-link">
+                                        <i class="fa-regular fa-circle-dot" style="color: #179fd0;"></i>
+                                        <p>Drama</p>
+                                        <span><i class='bx bx-chevron-right bx-flip-vertical'></i></span>
+                                    </a>
+                                    <a href="#" class="genre-menu-link">
+                                        <i class="fa-regular fa-circle-dot" style="color: #179fd0;"></i></i>
+                                        <p>Fiction</p>
+                                        <span><i class='bx bx-chevron-right bx-flip-vertical'></i></span>
+                                    </a>
+                                    <a href="#" class="genre-menu-link">
+                                        <i class="fa-regular fa-circle-dot" style="color: #179fd0;"></i>
+                                        <p>Child Literature</p>
+                                        <span><i class='bx bx-chevron-right bx-flip-vertical'></i></span>
+                                    </a>
+                                    <a href="#" class="genre-menu-link">
+                                        <i class="fa-regular fa-circle-dot" style="color: #179fd0;"></i></i>
+                                        <p>Science Friction</p>
+                                        <span><i class='bx bx-chevron-right bx-flip-vertical'></i></span>
+                                    </a>
+                                    <a href="#" class="genre-menu-link">
+                                        <i class="fa-regular fa-circle-dot" style="color: #179fd0;"></i>
+                                        <p>Adult Literature</p>
+                                        <span><i class='bx bx-chevron-right bx-flip-vertical'></i></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">My Books</a></li>
+                    <li class="search">
+                        <form action="">
+                            <input type="search" placeholder="Search here ...">
+                            <a href="#"><i class="fa fa-search"></i></a>
+                        </form>
+                    </li>
+                    <li>
+                        <a href="#" class="btn btn-hover" onclick="profileMenu()">
+                            <span><i class="fa-solid fa-circle-user fa-2xl"></i></span>
+                            <div class="profile-wrap" id="subMenu">
+                                <div class="profile-menu">
+                                    <div class="user-info">
+                                        <a href="#" class="profile-menu-link">
+                                            <i class='bx bxs-user' style='color:#b4b6c9'></i>
+                                            <p>Your Profile</p>
+                                            <span><i class='bx bx-chevron-right bx-flip-vertical'></i></span>
+                                        </a>
+                                        <a href="#" class="profile-menu-link">
+                                            <i class='bx bxs-book-open' style='color:#f9950a'></i>
+                                            <p>All Books</p>
+                                            <span><i class='bx bx-chevron-right bx-flip-vertical'></i></span>
+                                        </a>
+                                        <a href="#" class="profile-menu-link">
+                                            <i class='bx bxs-book-heart' style='color:#2136f7'></i>
+                                            <p>Wishlist</p>
+                                            <span><i class='bx bx-chevron-right bx-flip-vertical'></i></span>
+                                        </a>
+                                        <a href="#" class="profile-menu-link">
+                                            <i class='bx bx-log-out-circle bx-flip-vertical' style='color:#fd0000'></i>
+                                            <p>logout</p>
+                                            <span><i class='bx bx-chevron-right bx-flip-vertical'></i></span>
+                                        </a>    
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <button class="log">Log in</button>                        
+                    </li>
+                    <li>
+                        <button class="sign">Sign in</button>                        
+                    </li>
+                </ul>
+                <!-- MOBILE MENU TOGGLE -->
+                <div class="hamburger-menu" id="hamburger-menu">
+                    <div class="hamburger"></div>
+                </div>
+            </div>
         </div>
-        <nav class="nav-bar">
-            <ul>
-                <li>
-                    <a href="" class="active">Home</a>
-                </li>
-                <li>
-                    <a href="">Geners</a>
-                </li>
-                <li><a href="">Searchbar</a></li>
-                <li><a href="">Log in </a></li>
-                <li><a href="">Sign Up</a></li>
-            </ul>
-        </nav>
-    </header>    
+    </div>
+    <!-- END NAV -->
+
+    <!-- MAIN CAROUSEL -->
+    <!-- MAIN SECTION -->
+    <div class="main-section">
+        <!-- MAIN SLIDE -->
+        <div class="main-slide">
+            <div class="owl-carousel carousel-nav-center" id="main-carousel">
+                <!-- SLIDE ITEM -->
+                <div class="main-slide-item">
+                    <img src="Book-Covers/cover-1.jpg" alt="">
+                    <div class="overlay"></div>
+                    <div class="main-slide-item-content">
+                        <div class="item-content-wraper">
+                            <div class="item-content-title top-down">
+                                Book-1
+                            </div>
+                            <div class="item-content-description top-down delay-info">
+                                (book info)
+                            </div>
+                            <div class="item-action top-down delay-read">
+                                <a href="#" class="btn btn-hover">
+                                    <i class="bx bxs-right-arrow"></i>
+                                    <span>Read now</span>
+                                </a>
+                            </div>
+                            <div class="item-action top-down delay-read">
+                                <a href="#" class="btn btn-hover add-to-wishlist" data-book-id="unique_book_id">
+                                    <i class="bx bxs-heart"></i>
+                                    <span>Add to Wishlist</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="deslide-poster">
+                            <a href="#" class="book-poster">
+                                <img src="Book-Covers/cover-1.jpg" class="book-poster-img" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- END SLIDE ITEM -->
+                <!-- SLIDE ITEM -->
+                <div class="main-slide-item">
+                    <img src="Book-Covers/cover-2.jpg" alt="">
+                    <div class="overlay"></div>
+                    <div class="main-slide-item-content">
+                        <div class="item-content-wraper">
+                            <div class="item-content-title top-down">
+                                Book-2
+                            </div>
+                            <div class="item-content-description top-down delay-info">
+                                (book info)
+                            </div>
+                            <div class="item-action top-down delay-read">
+                                <a href="#" class="btn btn-hover">
+                                    <i class="bx bxs-right-arrow"></i>
+                                    <span>Read now</span>
+                                </a>
+                            </div>
+                            <div class="item-action top-down delay-read">
+                                <a href="#" class="btn btn-hover add-to-wishlist" data-book-id="unique_book_id">
+                                    <i class="bx bxs-heart"></i>
+                                    <span>Add to Wishlist</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="deslide-poster">
+                            <a href="book link here" class="book-poster">
+                                <img src="Book-Covers/cover-2.jpg" class="book-poster-img" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- END SLIDE ITEM -->
+                <!-- SLIDE ITEM -->
+                <div class="main-slide-item">
+                    <img src="Book-Covers/cover-3.jpg" alt="">
+                    <div class="overlay"></div>
+                    <div class="main-slide-item-content">
+                        <div class="item-content-wraper">
+                            <div class="item-content-title top-down">
+                                Book-3
+                            </div>
+                            <div class="item-content-description top-down delay-info">
+                                (book info)
+                            </div>
+                            <div class="item-action top-down delay-read">
+                                <a href="#" class="btn btn-hover">
+                                    <i class="bx bxs-right-arrow"></i>
+                                    <span>Read now</span>
+                                </a>
+                            </div>
+                            <div class="item-action top-down delay-read">
+                                <a href="#" class="btn btn-hover add-to-wishlist" data-book-id="unique_book_id">
+                                    <i class="bx bxs-heart"></i>
+                                    <span>Add to Wishlist</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="deslide-poster">
+                            <a href="book link here" class="book-poster">
+                                <img src="Book-Covers/cover-3.jpg" class="book-poster-img" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- END SLIDE ITEM -->
+            </div>
+        </div>
+        <!-- END MAIN SLIDE -->
+    </div>
+    <!-- END MAIN SECTION -->
+    <!-- END MAIN CAROUSEL -->
+
+    <!-- TRENDING BOOKS SECTION -->
+    <div class="section">
+        <div class="container">
+            <div class="section-header">
+                Trending
+            </div>
+            <div class="books-slide carousel-nav-center owl-carousel">
+                <!-- BOOLK-1 -->
+                <a href="#" class="book-item">
+                    <img src="Book-Covers/cover-1.jpg" alt="">
+                    <div class="book-item-content">
+                        <div class="book-title">
+                            Theatre of the dead
+                        </div>
+                        <div class="book-infos">
+                            <div class="book-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="book-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="book-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END BOOLK-1-->
+                <!-- BOOLK-2-->
+                <a href="#" class="book-item">
+                    <img src="Book-Covers/cover-2.jpg" alt="">
+                    <div class="book-item-content">
+                        <div class="book-title">
+                            Transformer
+                        </div>
+                        <div class="book-infos">
+                            <div class="book-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="book-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="book-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END BOOLK-2 -->
+                <!-- BOOLK-3 -->
+                <a href="#" class="book-item">
+                    <img src="Book-Covers/cover-3.jpg" alt="">
+                    <div class="book-item-content">
+                        <div class="book-title">
+                            Resident Evil
+                        </div>
+                        <div class="book-infos">
+                            <div class="book-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="book-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="book-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END BOOLK-3 -->
+                <!-- BOOLK-4 -->
+                <a href="#" class="book-item">
+                    <img src="Book-Covers/cover-4.jpg" alt="">
+                    <div class="book-item-content">
+                        <div class="book-title">
+                            Captain Marvel
+                        </div>
+                        <div class="book-infos">
+                            <div class="book-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="book-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="book-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END BOOLK-4 -->
+                <!-- BOOLK-5 -->
+                <a href="#" class="book-item">
+                    <img src="Book-Covers/cover-5.jpg" alt="">
+                    <div class="book-item-content">
+                        <div class="book-title">
+                            Hunter Killer
+                        </div>
+                        <div class="book-infos">
+                            <div class="book-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="book-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="book-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END BOOLK-5 -->
+                <!-- BOOLK-6 -->
+                <a href="#" class="book-item">
+                    <img src="Book-Covers/cover-6.jpg" alt="">
+                    <div class="book-item-content">
+                        <div class="book-title">
+                            Bloodshot
+                        </div>
+                        <div class="book-infos">
+                            <div class="book-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="book-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="book-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END BOOLK-6 -->
+                <!-- BOOLK-7 -->
+                <a href="#" class="book-item">
+                    <img src="Book-Covers/cover-7.jpg" alt="">
+                    <div class="book-item-content">
+                        <div class="book-title">
+                            Call
+                        </div>
+                        <div class="book-infos">
+                            <div class="book-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="book-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="book-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END BOOLK-7  -->
+            </div>
+        </div>
+    </div>
+    <!-- END TRENDING BOOKS SECTION -->
+    <!-- RECOMMENDED BOOKS SECTION -->
+    <div class="section">
+        <div class="container">
+            <div class="section-header">
+                Recommended
+            </div>
+            <div class="books-slide carousel-nav-center owl-carousel">
+                <!-- BOOLK-1 -->
+                <a href="#" class="book-item">
+                    <img src="Book-Covers/cover-9.jpg" alt="">
+                    <div class="book-item-content">
+                        <div class="book-title">
+                            Theatre of the dead
+                        </div>
+                        <div class="book-infos">
+                            <div class="book-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="book-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="book-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END BOOLK-1-->
+                <!-- BOOLK-2-->
+                <a href="#" class="book-item">
+                    <img src="Book-Covers/cover-8.jpg" alt="">
+                    <div class="book-item-content">
+                        <div class="book-title">
+                            Transformer
+                        </div>
+                        <div class="book-infos">
+                            <div class="book-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="book-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="book-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END BOOLK-2 -->
+                <!-- BOOLK-3 -->
+                <a href="#" class="book-item">
+                    <img src="Book-Covers/cover-7.jpg" alt="">
+                    <div class="book-item-content">
+                        <div class="book-title">
+                            Resident Evil
+                        </div>
+                        <div class="book-infos">
+                            <div class="book-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="book-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="book-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END BOOLK-3 -->
+                <!-- BOOLK-4 -->
+                <a href="#" class="book-item">
+                    <img src="Book-Covers/cover-5.jpg" alt="">
+                    <div class="book-item-content">
+                        <div class="book-title">
+                            Captain Marvel
+                        </div>
+                        <div class="book-infos">
+                            <div class="book-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="book-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="book-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END BOOLK-4 -->
+                <!-- BOOLK-5 -->
+                <a href="#" class="book-item">
+                    <img src="Book-Covers/cover-4.jpg" alt="">
+                    <div class="book-item-content">
+                        <div class="book-title">
+                            Hunter Killer
+                        </div>
+                        <div class="book-infos">
+                            <div class="book-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="book-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="book-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END BOOLK-5 -->
+                <!-- BOOLK-6 -->
+                <a href="#" class="book-item">
+                    <img src="Book-Covers/cover-3.jpg" alt="">
+                    <div class="book-item-content">
+                        <div class="book-title">
+                            Bloodshot
+                        </div>
+                        <div class="book-infos">
+                            <div class="book-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="book-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="book-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END BOOLK-6 -->
+                <!-- BOOLK-7 -->
+                <a href="#" class="book-item">
+                    <img src="Book-Covers/cover-2.jpg" alt="">
+                    <div class="book-item-content">
+                        <div class="book-title">
+                            Call
+                        </div>
+                        <div class="book-infos">
+                            <div class="book-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="book-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="book-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END BOOLK-7  -->
+            </div>
+        </div>
+    </div>
+    <!-- END RECOMMENDED BOOKS SECTION -->
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>About Us</h4>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Our Services</a></li>
+                        <li><a href="#">Our Team</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Help & Support</h4>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Troubleshooting Guide</a></li>
+                        <li><a href="#">Feedback & Suggestions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Policies</h4>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Copyright Information</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect With Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+
+    <!-- COPYRIGHT SECTION -->
+    <div class="copyright">
+        <i class='bx bx-copyright'></i><a href="#" target="_blank">ReadRover</a>
+    </div>
+    <!-- END COPYRIGHT SECTION -->
+
 </body>
+
 </html>
->>>>>>> 870eee4d2555b64cf7c50f4e0c903e123d0bedf3
