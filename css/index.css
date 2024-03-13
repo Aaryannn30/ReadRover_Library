@@ -69,6 +69,7 @@ img {
     justify-content: space-between;
     color: var(--text-color);
     height: var(--nav-height);
+    position: sticky;
 }
 
 .nav a {
