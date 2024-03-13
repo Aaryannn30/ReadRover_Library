@@ -1,9 +1,10 @@
 $(document).ready(() => {
+
     $('#hamburger-menu').click(() => {
         $('#hamburger-menu').toggleClass('active')
         $('#nav-menu').toggleClass('active')
     })
-    
+
     let navText = ["<i class='bx bxs-right-arrow-circle bx-flip-horizontal' ></i>", "<i class='bx bxs-right-arrow-circle bx-flip-vertical' ></i>"]
 
     $('#main-carousel').owlCarousel({
@@ -19,7 +20,7 @@ $(document).ready(() => {
     $('.books-slide').owlCarousel({
         items: 2,
         dots: false,
-        nav:true,
+        nav: true,
         navText: navText,
         margin: 15,
         responsive: {
@@ -60,3 +61,12 @@ $(document).ready(() => {
     });
 })
 
+function profileMenu() {
+    let subMenu = document.getElementById("subMenu");
+    subMenu.classList.toggle("open-menu");
+}
+
+function genreMenu() {
+    let genMenu = document.getElementById("genMenu")
+    genMenu.classList.toggle("open-genre");
+}
