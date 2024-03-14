@@ -609,13 +609,23 @@ form:hover a .fa {
 
 
 /*for Trending/Recommended Books Slider*/
-
+.book-item a
+{
+    margin-left:10px;
+}
 .book-item {
     display: block;
     position: relative;
     overflow: hidden;
-    padding-top: 140%;
+    padding-top: 80%;
+    /* padding: 20px; */
+    height:200%;
+    width:65%;
     cursor: pointer;
+}
+.div.owl-item.active
+{
+    margin-right:20%;
 }
 
 .book-item img {
@@ -629,7 +639,10 @@ form:hover a .fa {
 .book-item:hover img {
     transform: scale(1.2);
 }
-
+.book-info 
+{
+    font-size: 12px;
+}
 .book-item-content {
     position: absolute;
     bottom: 0;
