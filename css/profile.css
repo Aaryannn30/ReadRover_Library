@@ -61,12 +61,13 @@ body {
 }
 
 #dashboard {
-    margin-left: 270px; /* Adjust based on sidebar width */
-    padding: 20px;
+	margin-left: 270px;
+	/* Adjust based on sidebar width */
+	padding: 20px;
 }
 
 .dashboard-section {
-    display: none;
+	display: none;
 }
 
 /* SIDEBAR */
@@ -224,108 +225,66 @@ body {
 
 /* Log out Pop-Up */
 
-.logpop {
-	position: fixed;
-	height: 100%;
-	width: 100%;
-	max-width: 0;
-	max-height: 0;
-	background: #e3f2fd;
+.modal {	
+	border: none;
+	display: flexbox;
+	flex-wrap: nowrap;
+	margin-top: 14.5%;
+	margin-left: 37%;
+	padding: 40px 140px;	
+	border-radius: 3%;
+	box-shadow: 0 0 1em rgb(0 0 0 / .6);
+
+	& > * {
+		margin: 0 0 0.5rem 0;
+		padding: 0 10px;
+	}
 }
 
-.logpop.open-popup
-{	
-	max-height: 100px;
+.modal::backdrop {
+	background: linear-gradient(45deg,blue ,red,green);
+	opacity: 0.4;
 }
 
-button {
+button {	
 	font-size: 18px;
 	font-weight: 400;
 	color: #fff;
 	padding: 14px 22px;
 	border: none;
 	background: #4070f4;
-	border-radius: 6px;
+border-radius: 8px;
 	cursor: pointer;
+	transition: 0.3s;
 }
 
 button:hover {
-	background-color: #265df2;
+	background-color: #082470;
 }
 
-button.show-modal,
-.modal-box {
-	position: fixed;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-}
-
-.logpop.active .show-modal {
-	display: none;
-}
-
-.overlay {
-	position: fixed;
-	height: 100%;
-	width: 100%;
-	background: rgba(0, 0, 0, 0.3);
-	opacity: 0;
-	pointer-events: none;
-}
-
-.logpop.active .overlay {
-	opacity: 1;
-	pointer-events: auto;
-}
-
-.modal-box {
+.modal i{
 	display: flex;
-	flex-direction: column;
-	align-items: center;
-	max-width: 380px;
-	width: 100%;
-	padding: 30px 20px;
-	border-radius: 24px;
-	background-color: #fff;
-	opacity: 0;
-	pointer-events: none;
-	transition: all 0.3s ease;
-	transform: translate(-50%, -50%) scale(1.2);
+	justify-content: center;
+	font-size: 70px;	
 }
-
-.logpop.active .modal-box {
-	opacity: 1;
-	pointer-events: auto;
-	transform: translate(-50%, -50%) scale(1);
-}
-
-.modal-box i {
-	font-size: 70px;
-	color: #4070f4;
-}
-
-.modal-box h2 {
-	margin-top: 20px;
-	font-size: 25px;
-	font-weight: 500;
-	color: #333;
-}
-
-.modal-box h3 {
-	font-size: 16px;
-	font-weight: 400;
-	color: #333;
+.modal p{
+	margin-top: 25px;
 	text-align: center;
 }
 
-.modal-box .buttons {
+.modal h2 {
+	margin-top: 20px;
+	font-size: 25px;
+	font-weight: 500;
+	color: #000000;
+}
+
+.modal .button {
 	margin-top: 25px;
 }
 
-.modal-box button {
+.modal button {
 	font-size: 14px;
 	padding: 6px 12px;
 	margin: 0 10px;
-}
+} 

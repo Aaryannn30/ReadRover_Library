@@ -25,7 +25,7 @@ $(document).ready(() => {
         margin: 15,
         responsive: {
             500: {
-                items: 2
+                items: 4
             },
             1280: {
                 items: 4
