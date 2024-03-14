@@ -177,7 +177,7 @@ body {
 	display: flex;
 	justify-content: center;
 }
-/* SIDEBAR */
+
 
 /* CONTENT */
 #content {
@@ -190,6 +190,8 @@ body {
 	width: calc(100% - 60px);
 	left: 60px;
 }
+
+
 
 @media screen and (max-width: 768px) {
 	#sidebar {
