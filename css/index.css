@@ -609,18 +609,27 @@ form:hover a .fa {
 } */
 
 
+<<<<<<< HEAD
 
 /* for Trending/Recommended Books Slider */
+=======
+/*for Trending/Recommended Books Slider*/
+>>>>>>> f9789c3d73f90024a1eaa92b3dc32cc7fc59992a
 .book-item a
 {
     margin-left:10px;
 }
+<<<<<<< HEAD
  .book-item {
+=======
+.book-item {
+>>>>>>> f9789c3d73f90024a1eaa92b3dc32cc7fc59992a
     display: block;
     position: relative;
     overflow: hidden;
     padding-top: 80%;
     /* padding: 20px; */
+<<<<<<< HEAD
     margin:50px;
     height:200%;
                            /* width:80%;  */
@@ -629,6 +638,16 @@ form:hover a .fa {
      cursor: pointer; 
 } 
 
+=======
+    height:200%;
+    width:65%;
+    cursor: pointer;
+}
+.div.owl-item.active
+{
+    margin-right:20%;
+}
+>>>>>>> f9789c3d73f90024a1eaa92b3dc32cc7fc59992a
 
 .book-item img {
     position: absolute;

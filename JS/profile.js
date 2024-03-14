@@ -23,3 +23,9 @@ const sidebar = document.getElementById('sidebar');
 menuBar.addEventListener('click', function () {
 	sidebar.classList.toggle('hide');
 })
+
+
+function genreMenu() {
+    let genMenu = document.getElementById("genMenu")
+    genMenu.classList.toggle("open-genre");
+}
