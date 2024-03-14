@@ -234,9 +234,8 @@ body {
 }
 
 .logpop.open-popup
-{
-	max-width: 100%;
-	max-height: 100%;
+{	
+	max-height: 100px;
 }
 
 button {
