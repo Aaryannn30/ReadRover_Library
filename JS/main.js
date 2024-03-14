@@ -25,10 +25,10 @@ $(document).ready(() => {
         margin: 15,
         responsive: {
             500: {
-                items: 4
+                items: 3
             },
             1280: {
-                items: 4
+                items: 5
             },
             1600: {
                 items: 6
