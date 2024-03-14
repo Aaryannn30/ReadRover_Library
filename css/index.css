@@ -510,12 +510,12 @@ form:hover a .fa {
 
 .carousel-nav-center .owl-nav .owl-prev {
     position: absolute;
-    left: 50px;
+    left: 10px;
 }
 
 .carousel-nav-center .owl-nav .owl-next {
     position: absolute;
-    right: 50px;
+    right: 30px;
 }
 
 .owl-nav button {
@@ -603,6 +603,7 @@ form:hover a .fa {
     
 } */
 
+
 .book-poster .book-poster-img {
     position: relative;
     width: 380px;
@@ -626,17 +627,36 @@ form:hover a .fa {
 } */
 
 
+<<<<<<< HEAD
+
+/* for Trending/Recommended Books Slider */
+=======
 /*for Trending/Recommended Books Slider*/
+>>>>>>> f9789c3d73f90024a1eaa92b3dc32cc7fc59992a
 .book-item a
 {
     margin-left:10px;
 }
+<<<<<<< HEAD
+ .book-item {
+=======
 .book-item {
+>>>>>>> f9789c3d73f90024a1eaa92b3dc32cc7fc59992a
     display: block;
     position: relative;
     overflow: hidden;
     padding-top: 80%;
     /* padding: 20px; */
+<<<<<<< HEAD
+    margin:50px;
+    height:200%;
+                           /* width:80%;  */
+                           width:65%;
+                        
+     cursor: pointer; 
+} 
+
+=======
     height:200%;
     width:65%;
     cursor: pointer;
@@ -645,12 +665,15 @@ form:hover a .fa {
 {
     margin-right:20%;
 }
+>>>>>>> f9789c3d73f90024a1eaa92b3dc32cc7fc59992a
 
 .book-item img {
     position: absolute;
     top: 0;
     left: 0;
+    /* right:50; */
     width: 100%;
+    /* height:350px; */
     transition: transform 0.3s linear;
 }
 
@@ -686,6 +709,7 @@ form:hover a .fa {
     position: relative;
     font-weight: 700;
 }
+
 
 /* to get space between main carousel and trending section */
 /* .section {
