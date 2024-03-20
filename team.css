@@ -1,13 +1,14 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: aliceblue;
 }
 
-.card-img-top{
+.card-img-top {
     border-radius: 50%;
     height: 150px !important;
     width: 150px !important;
@@ -16,25 +17,30 @@ body{
     top: -80px;
     object-fit: cover;
 }
-.card{
+
+.card {
     border-radius: 0;
     cursor: pointer;
     margin-top: 100px !important;
 }
-.card:hover{
+
+.card:hover {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 
 }
-.card-body{
+
+.card-body {
     margin-top: -50px;
 }
-.bi{
+
+.bi {
     font-size: 25px;
 }
+
 @media only screen and (max-width: 600px) {
-    .card-img-top{
-        
+    .card-img-top {
+
         left: 48px !important;
-       
+
     }
-  }
+}
