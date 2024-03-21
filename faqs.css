@@ -167,3 +167,14 @@ body
 {
     color:#fff;
 }
+
+.tab label .ques
+{
+    justify-content: space-between;
+    padding: 30px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
