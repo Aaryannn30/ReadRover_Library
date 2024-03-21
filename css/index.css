@@ -106,7 +106,10 @@ img {
     padding-left: 0 20px;
 }
 
-
+.nav-menu li .log a
+{
+    text-decoration: none;
+}
 
 .nav-menu li~li {
     margin-left: 30px;
