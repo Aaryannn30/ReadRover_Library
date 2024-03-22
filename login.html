@@ -7,7 +7,6 @@
     <title>Login - Register Form - CodeCraftedWeb</title>
     <link rel="stylesheet" href="css/login.css">
 </head>
-
 <body>
     <div class="bg"></div>
     <div class="container">
@@ -16,22 +15,23 @@
             <div class="login">
                 <form class="form">
                     <label for="chk" aria-hidden="true">Log in</label>
-                    <input class="input" type="email" name="email" placeholder="Email" required>
-                    <input class="input" type="password" name="pswd" placeholder="Password" required>
+                    <input class="input" type="email" name="email" placeholder="Email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+                    <input class="input" type="password" name="pswd" placeholder="Password" required pattern=".{8,}">
                     <button>Log in</button>
                 </form>
             </div>
             <div class="register">
                 <form class="form">
                     <label for="chk" aria-hidden="true">Register</label>
-                    <input class="input" type="text" name="txt" placeholder="Username" required>
-                    <input class="input" type="email" name="email" placeholder="Email" required>
-                    <input class="input" type="password" name="pswd" placeholder="Password" required>
+                    <input class="input" type="text" name="txt" placeholder="Username" required pattern="[a-zA-Z0-9_]{4,}">
+                    <input class="input" type="email" name="email" placeholder="Email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+                    <input class="input" type="password" name="pswd" placeholder="Password" required pattern=".{8,}">
                     <button>Register</button>
                 </form>
             </div>
         </div>
     </div>
+
 </body>
 
 </html>

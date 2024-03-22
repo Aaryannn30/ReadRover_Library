@@ -1,0 +1,21 @@
+.heading
+{
+    text-align: center ;
+    font-size: 50px;
+    color: darkblue;
+}
+.description
+{
+    font-size: 20px;
+    padding:20px;
+}
+.title
+{
+    font-size: 25px;
+}
+.fa-solid
+{
+    padding: 10px;
+    font-size:30px;
+    color: darkblue;
+}
