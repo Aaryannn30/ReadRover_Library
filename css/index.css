@@ -1,6 +1,6 @@
 :root {
     --main-color: #892CDC;
-    --body-bg: #000000;
+    --body-bg: #000000ef;
     --box-bg: #BC6FF1;
     --text-color: #ffffff;
 
@@ -11,26 +11,28 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;    
+    box-sizing: border-box;
 }
 
-html {    
+html {
     font-size: 16px;
 }
 
 ::-webkit-scrollbar {
-    
+
     width: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background:var(--box-bg);
+    background: var(--box-bg);
 }
+
 ::-webkit-scrollbar-thumb {
     transition: 0.8s;
     border-radius: 10px;
-    background:var(--main-color);
+    background: var(--main-color);
 }
+
 ::-webkit-scrollbar-track {
     border-radius: 10px;
     background: rgba(255, 254, 254, 0.5);
@@ -106,7 +108,10 @@ img {
     padding-left: 0 20px;
 }
 
-
+.nav-menu li .log a
+{
+    text-decoration: none;
+}
 
 .nav-menu li~li {
     margin-left: 30px;
@@ -159,68 +164,70 @@ li .btn-hover:hover::before {
 
 .btn i,
 .btn span {
-    z-index: 1;    
+    z-index: 1;
 }
 
 .btn i {
-    margin-right: 1rem;    
+    margin-right: 1rem;
 }
 
-li .log, li .sign{
+li .log,
+li .sign {
     position: relative;
     border: none;
     background-color: var(--main-color);
     padding: 10px 15px;
-    border-radius:10px;
+    border-radius: 10px;
     transition: 0.2s;
 }
-li .log
-{
+
+li .log {
     background-color: #BC6FF1;
     margin-left: -40px;
-    margin-right: -5px ;
+    margin-right: -5px;
 }
 
-li .sign{
+li .sign {
     margin-right: -20px;
 }
 
 
-li .log:hover , li .sign:hover{    
-    background-color: #525252;    
+li .log:hover,
+li .sign:hover {
+    background-color: #525252;
 }
 
 /* Profile Dropdown*/
-.profile-wrap{
+.profile-wrap {
     position: absolute;
     top: 74%;
     right: 1%;
-    width:  250px;
+    width: 250px;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.5s;    
+    transition: max-height 0.5s;
 }
 
-.profile-wrap.open-menu{
-    max-height: 400px;   
+.profile-wrap.open-menu {
+    max-height: 400px;
 }
 
-.profile-menu{
-    background: #24262b;    
+.profile-menu {
+    background: #24262b;
     padding: 20px;
     /* margin: -5px;     */
     border-radius: 5%;
 }
 
-.user-info{
+.user-info {
     display: flexbox;
-    align-items: center;    
-    margin-top: -60px; 
-    padding: 0;    
+    align-items: center;
+    margin-top: -60px;
+    padding: 0;
     border-radius: 2%;
 }
 
-.profile-menu-link{
+.profile-menu-link {
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -230,55 +237,56 @@ li .log:hover , li .sign:hover{
     margin: 12px 0;
 }
 
-.profile-menu-link p{
-    width: 100%;   
-    transition: 0.5s; 
+.profile-menu-link p {
+    width: 100%;
+    transition: 0.5s;
 }
 
-.profile-menu-link:hover p{
+.profile-menu-link:hover p {
     color: #ffc107;
-    font-size:15px;
+    font-size: 15px;
 }
-.profile-menu-link i{
+
+.profile-menu-link i {
     width: 40px;
     padding: 8px;
     margin-right: 15px;
 }
 
-.profile-menu-link span{
+.profile-menu-link span {
     font-size: 22px;
     transition: transform 0.5s;
 }
 
-.profile-menu-link:hover span{
+.profile-menu-link:hover span {
     transform: translateX(5px);
 }
 
 
 /* Genre Drodown */
-.genre-wrap{
+.genre-wrap {
     position: absolute;
     top: 99%;
     right: 12%;
-    width:  350px;
+    width: 350px;
     height: 400px;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.5s;    
+    transition: max-height 0.5s;
 }
 
-.genre-wrap.open-genre{
-    max-height: 350px;   
+.genre-wrap.open-genre {
+    max-height: 350px;
 }
 
-.genre-menu{
-    background: #24262b;    
+.genre-menu {
+    background: #24262b;
     padding: 20px;
-    margin: 12px;    
+    margin: 12px;
     border-radius: 2%;
 }
 
-.genre-menu-link{
+.genre-menu-link {
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -289,23 +297,23 @@ li .log:hover , li .sign:hover{
     padding: 0 10px;
 }
 
-.genre-menu-link p{
+.genre-menu-link p {
     padding-left: 20px;
-    width: 100%;   
-    transition: 0.5s; 
+    width: 100%;
+    transition: 0.5s;
 }
 
-.genre-menu-link:hover p{
+.genre-menu-link:hover p {
     color: #ffc107;
-    font-size:15px;
+    font-size: 15px;
 }
 
-.genre-menu-link span{
+.genre-menu-link span {
     font-size: 22px;
     transition: transform 0.5s;
 }
 
-.genre-menu-link:hover span{
+.genre-menu-link:hover span {
     transform: translateX(5px);
 }
 
@@ -627,45 +635,22 @@ form:hover a .fa {
 } */
 
 
-<<<<<<< HEAD
 
-/* for Trending/Recommended Books Slider */
-=======
 /*for Trending/Recommended Books Slider*/
->>>>>>> f9789c3d73f90024a1eaa92b3dc32cc7fc59992a
-.book-item a
-{
-    margin-left:10px;
-}
-<<<<<<< HEAD
- .book-item {
-=======
+
 .book-item {
->>>>>>> f9789c3d73f90024a1eaa92b3dc32cc7fc59992a
     display: block;
     position: relative;
     overflow: hidden;
     padding-top: 80%;
     /* padding: 20px; */
-<<<<<<< HEAD
-    margin:50px;
-    height:200%;
-                           /* width:80%;  */
-                           width:65%;
-                        
-     cursor: pointer; 
-} 
-
-=======
-    height:200%;
-    width:65%;
+    margin: 50px;
+    height: 200%;
+    /* width:80%;  */
+    width: 65%;
     cursor: pointer;
 }
-.div.owl-item.active
-{
-    margin-right:20%;
-}
->>>>>>> f9789c3d73f90024a1eaa92b3dc32cc7fc59992a
+
 
 .book-item img {
     position: absolute;
@@ -680,10 +665,11 @@ form:hover a .fa {
 .book-item:hover img {
     transform: scale(1.2);
 }
-.book-info 
-{
+
+.book-info {
     font-size: 12px;
 }
+
 .book-item-content {
     position: absolute;
     bottom: 0;

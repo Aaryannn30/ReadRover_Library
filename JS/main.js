@@ -22,16 +22,16 @@ $(document).ready(() => {
         dots: false,
         nav: true,
         navText: navText,
-        margin: 15,
+        margin: 1,
         responsive: {
             500: {
-                items: 4
+                items: 3
             },
             1280: {
-                items: 4
+                items: 6
             },
             1600: {
-                items: 6
+                items: 8
             }
         }
     })
