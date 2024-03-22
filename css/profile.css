@@ -253,7 +253,7 @@ button {
 	padding: 14px 22px;
 	border: none;
 	background: #4070f4;
-border-radius: 8px;
+    border-radius: 8px;
 	cursor: pointer;
 	transition: 0.3s;
 }

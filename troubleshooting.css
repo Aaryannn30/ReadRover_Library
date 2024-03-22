@@ -1,3 +1,4 @@
+/* Reset default margin and padding */
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +12,7 @@ body {
     color: #333;
 }
 
+/* Header styles */
 header {
     background-color: #007bff;
     color: #fff;
@@ -23,14 +25,30 @@ header h1 {
     font-size: 24px;
 }
 
-.description
-{
-    font-size: 20px;
-    padding:20px;
+/* Main Content styles */
+main {
+    padding: 20px;
 }
-.title
-{
-    font-size: 25px;
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+strong {
+    font-weight: bold;
 }
 
 /* Footer styles */
