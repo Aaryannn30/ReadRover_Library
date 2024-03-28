@@ -16,14 +16,14 @@ function main() {
 
     const students = JSON.parse(localStorage.getItem("students")) || [];
 
-    // const books = JSON.parse(localStorage.getItem("books")) || [
-    //     {
-    //         name: "Alice’s Adventures in Wonderland",
-    //         author: "Lewis Carroll",
-    //         url: "Books/b1.html",
-    //         genre: ["Fantasy fiction", "Children's stories"]
-    //     }
-    // ];
+    const books = JSON.parse(localStorage.getItem("books")) || [
+        {
+            name: "Alice’s Adventures in Wonderland",
+            author: "Lewis Carroll",
+            url: "Books/b1.html",
+            genre: ["Fantasy fiction", "Children's stories"]
+        }
+    ];
 
     const addStudent = (name, age, roll) => {
         students.push({

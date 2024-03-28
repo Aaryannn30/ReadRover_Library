@@ -1,0 +1,46 @@
+DRAMA
+b14-The Complete Works of William Shakespeare by William Shakespeare
+b6-Romeo and Juliet by William Shakespeare
+b19-A Christmas Carol in Prose; Being a Ghost Story of Christmas by Charles Dickens
+b20-Anna Karenina by graf Leo Tolstoy
+
+FICTION
+b9-Pride and Prejudice by Jane Austen
+b7-The Adventures of Sherlock Holmes by Arthur Conan Doyle
+b11-War and Peace by graf Leo Tolstoy
+b5-Sense and Sensibility by Jane Austen
+b17-Treasure Island by Robert Louis Stevenson
+b16-Through the Looking-Glass by Lewis Carroll
+b12-The Jungle Book by Rudyard Kipling
+b3-Mosses from an old manse by Nathaniel Hawthorne
+b18-The Yellow Wallpaper by Charlotte Perkins Gilman
+b19-A Christmas Carol in Prose; Being a Ghost Story of Christmas by Charles Dickens
+b21-Uncle Tom's Cabin by Harriet Beecher Stowe
+b25-Ivanhoe: A Romance by Walter Scott
+b29-The Gilded Age: A Tale of Today by Mark Twain and Charles Dudley Warner
+b30-The Pickwick Papers by Charles Dickens
+
+CHILD LITERATURE
+b1-Alice's Adventures in Wonderland by Lewis Carroll
+b8-Winnie-the-Pooh by A. A. Milne
+b13-The Adventures of Tom Sawyer, Complete by Mark Twain
+b16-Through the Looking-Glass by Lewis Carroll
+b12-The Jungle Book by Rudyard Kipling
+b19-A Christmas Carol in Prose; Being a Ghost Story of Christmas by Charles Dickens
+
+SCIENCE FICTION
+b10-The War of the Worlds by H. G. Wells
+b2-Gulliver's Travels into Several Remote Nations of the World by Jonathan Swift
+b15-The Time Machine by H. G. Wells
+b20-Anna Karenina by graf Leo Tolstoy
+b22-The Invisible Man: A Grotesque Romance by H. G. Wells
+b23-The island of Doctor Moreau by H. G. Wells
+b24-The Tragedy of Pudd'nhead Wilson by Mark Twain
+b28-Second Variety by Philip K. Dick
+
+ADULT LITERATURE
+b4-Persuasion by Jane Austen
+b17-Treasure Island by Robert Louis Stevenson
+b26-The Interpretation of Dreams by Sigmund Freud
+b27-A way of life : An address to Yale students Sunday evening, April 20th, 1913
+b29-The Gilded Age: A Tale of Today by Mark Twain and Charles Dudley Warner

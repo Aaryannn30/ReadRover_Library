@@ -108,7 +108,10 @@ img {
     padding-left: 0 20px;
 }
 
-
+.nav-menu li .log a
+{
+    text-decoration: none;
+}
 
 .nav-menu li~li {
     margin-left: 30px;
@@ -664,7 +667,18 @@ form:hover a .fa {
 }
 
 .book-info {
-    font-size: 12px;
+    display: inline-block;
+    font-size: 13px;    
+}
+
+.book-info button{   
+    align-items: centers; 
+    position: relative;
+    background-color: #ffc107;    
+    padding: 5px;
+    border-radius: 45%;
+    border-style: none;
+    text-emphasis: none;    
 }
 
 .book-item-content {
