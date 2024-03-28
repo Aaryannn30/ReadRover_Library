@@ -29,6 +29,7 @@ body
 .container h1
 {
     color:#333;
+    padding-left: 70px;
 }
 
 .container .tab
@@ -39,6 +40,7 @@ body
     box-shadow: 0 15px 25px rgba(0,0,0,0.05);
     border-radius:5px;
     overflow: hidden;
+    width:100%;
 }
 
 .container .tab input
@@ -63,6 +65,7 @@ body
     transition: transform 1s;
 }
 
+
 .container .tab:hover label::after
 {
     color:#333;
@@ -71,6 +74,8 @@ body
 .container .tab input:checked ~ label::after
 {
     transform: rotate(135deg);
+    overflow:hidden;
+    overflow: auto;
     color:#fff;
 }
 
@@ -126,15 +131,16 @@ body
     background: linear-gradient(135deg,#d17b7b,#e73d3d);
 }
 
-.container .tab label h3 
+.container .tab label pre
 {
     position: relative;
     font-weight: 500;
+    font-size: 17px;
     color: #333;
     z-index: 10;
 }
 
-.content .tab input:checked ~ label h3
+.content .tab input:checked ~ label pre
 {
     background: #fff;
     padding:2px 10px;
@@ -166,15 +172,4 @@ body
 .container .tab input:checked ~ .content p
 {
     color:#fff;
-}
-
-.tab label .ques
-{
-    justify-content: space-between;
-    padding: 30px;
-    font-size: 30px;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    transition: all .3s ease-in-out;
 }

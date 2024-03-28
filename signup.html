@@ -5,7 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Register Form - CodeCraftedWeb</title>
-    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="css/signup.css">                             
+    <script>
+        function validation()
+        {
+            e=document.getElementById("e").value;
+            pat_e=/^\w+([\.-]?\w+)*@\w+([\.-]?\w{2,3})(\.\w{2,3})$/;
+
+            if(!pat_e.test(e))
+            {
+                alert("Incorrect Email id");
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -14,13 +26,13 @@
         <div class="main">
             <input type="checkbox" id="chk" aria-hidden="true">
             <div class="login">
-                <button class="button" onclick="document.close()">&times;</button>
+                <button class="button" onclick="document.close()" src="index.html">&times;</button>
                 <form class="form">
                     <label for="chk" aria-hidden="true">Sign Up</label>
                     <input class="input" type="text" name="txt" placeholder="Username" required>
-                    <input class="input" type="email" name="email" placeholder="Email" required>
+                    <input class="input" type="email" name="email" placeholder="Email" id="e" required>
                     <input class="input" type="password" name="pswd" placeholder="Password" required>
-                    <button>Sign Up</button>
+                    <button onclick="validation()">Sign Up</button>
                 </form>
             </div>
             <div class="register">
