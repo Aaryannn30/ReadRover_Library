@@ -1,35 +1,12 @@
 * {
-<<<<<<< HEAD:team.css
-=======
     padding: 0;
->>>>>>> a50d3afa89adf8a2533e0b7e9e250a7f2cf42c2a:css/team.css
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-<<<<<<< HEAD:team.css
-/* Body styles */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-}
-
-header {
-    background-color: #007bff;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 24px;
-=======
 body {
     background-color: aliceblue;
->>>>>>> a50d3afa89adf8a2533e0b7e9e250a7f2cf42c2a:css/team.css
 }
 
 .card-img-top {
@@ -67,18 +44,4 @@ body {
         left: 48px !important;
 
     }
-<<<<<<< HEAD:team.css
-  }
-
-/* Footer styles */
-footer {
-    background-color: #007bff;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-=======
->>>>>>> a50d3afa89adf8a2533e0b7e9e250a7f2cf42c2a:css/team.css
 }
