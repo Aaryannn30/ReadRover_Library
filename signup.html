@@ -5,8 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Register Form - CodeCraftedWeb</title>
+<<<<<<< HEAD
     <link rel="stylesheet" href="css/login.css">
     <style src="user.js"></style>  
+=======
+    <link rel="stylesheet" href="css/signup.css">                             
+    <script>
+        function validation()
+        {
+            e=document.getElementById("e").value;
+            pat_e=/^\w+([\.-]?\w+)*@\w+([\.-]?\w{2,3})(\.\w{2,3})$/;
+
+            if(!pat_e.test(e))
+            {
+                alert("Incorrect Email id");
+            }
+        }
+    </script>
+>>>>>>> b55e8ab3e2bd4d9026bca39df278a2d1f530ddb3
 </head>
 <body>
     <div class="bg"></div>
@@ -14,11 +30,19 @@
         <div class="main">
             <input type="checkbox" id="chk" aria-hidden="true">
             <div class="login">
+                <button class="button" onclick="document.close()" src="index.html">&times;</button>
                 <form class="form">
                     <label for="chk" aria-hidden="true">Sign Up</label>
+<<<<<<< HEAD
                     <input class="input" type="email" name="email" placeholder="Email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
                     <input class="input" type="password" name="pswd" placeholder="Password" required pattern=".{8,}">
                     <button>Sign up</button>
+=======
+                    <input class="input" type="text" name="txt" placeholder="Username" required>
+                    <input class="input" type="email" name="email" placeholder="Email" id="e" required>
+                    <input class="input" type="password" name="pswd" placeholder="Password" required>
+                    <button onclick="validation()">Sign Up</button>
+>>>>>>> b55e8ab3e2bd4d9026bca39df278a2d1f530ddb3
                 </form>
             </div>
             <div class="register">
@@ -26,13 +50,22 @@
                     <label for="chk" aria-hidden="true">log in</label>
                     <input class="input" type="text" name="txt" placeholder="Username" required>
                     <input class="input" type="email" name="email" placeholder="Email" required>
+<<<<<<< HEAD
                     <input class="input" type="password" name="pswd" placeholder="Password" required>
                     <button type="submit">log in</button>
+=======
+                    <!-- <input class="input" type="password" name="pswd" placeholder="Password" required> -->
+                    <button>Log in</button>
+>>>>>>> b55e8ab3e2bd4d9026bca39df278a2d1f530ddb3
                 </form>
             </div>
         </div>
     </div>
+<<<<<<< HEAD
 
+=======
+    <script src="JS/signup.js"></script>
+>>>>>>> b55e8ab3e2bd4d9026bca39df278a2d1f530ddb3
 </body>
 
 </html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Switch button</title>
+	<link rel="stylesheet" type="text/css" href="css/feedback.css">
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+	<div class="form-box">
+		<div class="button-box">
+			<div id="btn"></div>
+			<button type="button" class="toggle-btn" onclick="leftClick()">Feedback</button>
+			<button type="button" class="toggle-btn" onclick="rightClick()">Suggestion</button>
+		</div>
+	</div>
+	<div class="footer-list">
+
+		<p class="footer-list-title">Subscribe Us</p>
+
+		<form action="" class="newsletter-form">
+		  <input type="email" name="email" placeholder="Type here" required class="newsletter-input">
+
+		  <button type="submit" class="newsletter-btn" aria-label="Submit">
+			<ion-icon name="paper-plane-outline"></ion-icon>
+		  </button>
+		</form>
+	  </div>
+	<script src="JS/feedback.js"></script>
+</body>
+</html>
+
