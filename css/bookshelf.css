@@ -1,0 +1,380 @@
+
+/* CUSTOM PROPERTY */
+
+:root {
+  
+   /* typography */
+  
+    --ff-poppins: 'Poppins', sans-serif;
+    --ff-jost: 'Jost', sans-serif;
+  
+    --fs-1: 4.8rem;
+    --fs-2: 3.2rem;
+    --fs-3: 2.4rem;
+    --fs-4: 1.9rem;
+    --fs-5: 1.4rem;
+  
+    --fw-500: 500;
+    --fw-600: 600;
+    --fw-700: 700;
+    --fw-900: 900;
+ 
+    /* border radius */
+  
+    --radius-4: 4px;
+    --radius-6: 6px;
+    --radius-8: 8px;
+  
+    /* spacing */
+  
+    --section-padding: 90px;
+  
+  }
+  
+ 
+  /* RESET */
+  
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  li { list-style: none; }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  a,
+  img,
+  span,
+  input,
+  button,
+  ion-icon { display: block; }
+  
+  img { height: auto; }
+  
+  input,
+  button {
+    background: none;
+    border: none;
+    font: inherit;
+  }
+  
+  input { width: 100%; }
+  
+  button { cursor: pointer; }
+  
+  ion-icon {
+    pointer-events: none;
+    color: white;
+  }
+  
+  ::selection { background-color:white; }
+  
+  :focus-visible { outline-offset: 4px; }
+  
+  html {
+    font-family: var(--ff-poppins);
+    font-size: 10px;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: black;
+    color: grey;
+    font-size: 1.6rem;
+  }
+  
+
+  /* REUSED STYLE */
+  
+  .container { padding-inline: 25px; }
+
+
+  
+  .h1,
+  .h2,
+  .h3 {
+    color: white;
+    font-family: var(--ff-jost);
+  }
+  
+  .h2,
+  .h3 { font-weight: var(--fw-600); }
+  
+  .h2 {
+    font-size: var(--fs-2);
+    line-height: 1.2;
+  }
+  
+  .section { padding-block-start: var(--section-padding); }
+  
+  .title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block-end: 50px;
+  }
+  
+  .btn-link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: white;
+    font-weight: var(--fw-500);
+    transition: var(--transition-2);
+  }
+  
+  .btn-link:is(:hover, :focus) { color: yellow; }
+  
+  .btn-link ion-icon { color: inherit; }
+  
+  .grid-list {
+    display: grid;
+    gap: 30px;
+  }
+  
+  .card {
+    background-color: black;
+    padding: 24px;
+    border-radius: var(--radius-8);
+    box-shadow: var(--shadow-1);
+    transition: var(--transition-2);
+  }
+  
+  .card-banner {
+    overflow: hidden;
+    border-radius: var(--radius-6);
+    background-color: black;
+  }
+  
+  .img-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .card-title,
+  .card-title > a { transition: var(--transition-2); }
+  
+
+  /* HEADER */
+  
+  .header .btn > span { display: none; }
+  
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #52057B;
+    padding-block: 20px;
+    transition: var(--transition-1);
+    z-index: 4;
+  }
+  
+  .header.active { box-shadow: var(--shadow-2); }
+  
+  .header .container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .menu-open-btn {
+    margin-inline-start: auto;
+    font-size: 2.6rem;
+  }
+  
+  .header ion-icon { color: white; }
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    right: -500px;
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    background-color: black;
+    visibility: hidden;
+    z-index: 2;
+    transition: 0.15s var(--cubic-in);
+  }
+  
+  .navbar.active {
+    visibility: visible;
+    transform: translateX(-500px);
+    transition: 0.35s var(--cubic-out);
+  }
+  
+  .navbar-top,
+  .navbar-list { padding: 30px; }
+  
+  .navbar-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-title { font-weight: var(--fw-600); }
+  
+  .nav-close-btn ion-icon {
+    color: grey;
+    font-size: 2.7rem;
+    --ionicon-stroke-width: 40px;
+  }
+  
+  .navbar-link {
+    font-size: var(--fs-3);
+    color: white;
+    padding-block: 10px;
+    font-weight: var(--fw-600);
+    transition: var(--transition-1);
+  }
+  
+  .navbar-link:is(:hover, :focus) { color: yellow; }
+  
+  .overlay {
+    position: fixed;
+    inset: 0;
+    background-color: black;
+    transition: var(--transition-2);
+    opacity: 0;
+    pointer-events: none;
+    z-index: 1;
+  }
+  
+  .overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+    
+
+  /* EXPLORE */
+  
+  .explore-card .card-banner {
+    aspect-ratio: 1 / 1;
+    margin-block-end: 35px;
+  }
+  
+  .explore-card .card-title > a:is(:hover, :focus) { color: yellow; }
+  
+  .explore-card .card-author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-block: 10px;
+  }
+  
+ /* TOP SELLER */
+  
+  .top-seller .section-title { margin-block-end: 50px; }
+  
+  .top-seller-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .top-seller-card .card-avatar {
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .top-seller-card .card-title {
+    color: green;
+    font-size: 1.6rem;
+    font-weight: var(--fw-600);
+    margin-block-end: 5px;
+  }
+
+  
+  #fiction {
+    background-color: rgb(192, 50, 128); 
+  }
+  #science-fiction {
+    background-color: rgb(34, 34, 128); 
+  }
+  #child-literature{
+    background-color: rgb(107, 107, 9); 
+  }
+  #adult-literature {
+    background-color: rgb(82, 63, 63); 
+  }
+  #drama {
+    background-color: rgb(112, 13, 206);
+  }
+  
+  /* MEDIA QUERIES */
+
+  /* responsive for larger than 575px screen */
+  @media (min-width: 575px) {
+
+    .grid-list,
+    .footer-top { grid-template-columns: 1fr 1fr; }
+  
+  }
+  
+
+  /* responsive for larger than 768px screen */
+  @media (min-width: 768px) {
+
+    :root {
+      --fs-1: 6.4rem;
+  
+    }
+  
+  }
+  
+
+  /* responsive for larger than 992px screen */
+  @media (min-width: 992px) {
+
+    .grid-list { grid-template-columns: repeat(3, 1fr); }
+  
+  }
+  
+
+  /* /responsive for larger than 1200px screen */
+  @media (min-width: 1200px) {
+  
+    .container {
+      max-width: 1180px;
+      width: 100%;
+      margin-inline: auto;
+    }
+  
+    .grid-list { grid-template-columns: repeat(4, 1fr); }
+  
+  
+  
+ 
+    /* header */
+    .overlay,
+    .navbar-top,
+    .menu-open-btn { display: none; }
+  
+    .navbar,
+    .navbar.active {
+      all: unset;
+      margin-inline: auto;
+    }
+  
+    .navbar-list {
+      padding: 0;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+  
+    .navbar-link { --fs-3: 1.6rem; }
+  
+    .top-seller .grid-list { grid-template-columns: repeat(3, 1fr); }
+
+  
+  }
