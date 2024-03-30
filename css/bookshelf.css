@@ -29,12 +29,12 @@
   --section-padding: 120px;
 
   --main-color: #892CDC;
-    --body-bg: #000000ef;
-    --box-bg: #BC6FF1;
-    --text-color: #ffffff;
+  --body-bg: #000000ef;
+  --box-bg: #BC6FF1;
+  --text-color: #ffffff;
 
-    --nav-height: 70px;
-    --space-top: 30px;
+  --nav-height: 70px;
+  --space-top: 30px;
 }
 
 /* navbar */
@@ -97,8 +97,7 @@ a {
   padding-left: 0 20px;
 }
 
-.nav-menu li .log a
-{
+.nav-menu li .log a {
   text-decoration: none;
 }
 
@@ -436,7 +435,7 @@ form:hover a .fa {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background:#BC6FF1;
+  background: #BC6FF1;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -730,6 +729,17 @@ body {
   align-items: center;
   gap: 10px;
   margin-block: 10px;
+
+}
+
+.explore-card {
+  transition: all .5s ease 0s;
+  -webkit-transition: all .5s ease 0s;
+  -moz-transition: all .5s ease 0s;
+}
+
+.explore-card:hover .card-banner {
+  transform: scale(1.2);
 }
 
 .card-author {

@@ -58,6 +58,10 @@ body {
     background-color: #eee;
 }
 
+form button::after{
+    display: none;
+}
+
 /*checkbox to switch from sign up to login*/
 
 #chk {

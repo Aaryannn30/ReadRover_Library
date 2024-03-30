@@ -62,6 +62,7 @@ img {
 .container {
     max-width: 1920px;
     padding: 0 40px;
+    padding-left: ;
     margin: auto;
 }
 
@@ -534,6 +535,8 @@ form:hover a .fa {
 .owl-nav button i {
     transition: 0.8s;
     border-radius: 50%;
+    margin-left: 20px;
+    margin-right: -30px;
 }
 
 .owl-nav button:hover i {
@@ -630,27 +633,20 @@ form:hover a .fa {
     border-style: none; */
 }
 
-/* .manga-poster-img {
-    
-} */
-
-
-
 /*for Trending/Recommended Books Slider*/
 
 .book-item {
     display: block;
     position: relative;
     overflow: hidden;
-    padding-top: 80%;
-    /* padding: 20px; */
-    margin: 50px;
+    padding-top: 130%;
+    padding-right: 90%;    
+    margin: 30px 30px;
     height: 200%;
     /* width:80%;  */
     width: 65%;
     cursor: pointer;
 }
-
 
 .book-item img {
     position: absolute;
@@ -726,9 +722,17 @@ form:hover a .fa {
 
 .section .container {
     max-width: 1920px;
-    padding: 0 15px;
+    padding: 0 5px;
     margin: auto;
 }
+
+/* .owl-prev i{
+    margin-right: 70px;
+}
+
+.owl-next i{
+    margin-left: px;
+} */
 
 /* FOOTER */
 
