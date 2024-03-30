@@ -4,8 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-
+  <title>ReadRover - Genre</title>
+  <!-- Title Icon -->
+  <link rel="shortcut icon" type="x-icon" href="Books/images/Title-Icon/book-alt-solid-24.png">
   <!-- css link  -->
   <link rel="stylesheet" href="css/bookshelf.css">
 
@@ -16,11 +17,11 @@
     href="https://fonts.googleapis.com/css2?family=Jost:wght@600;900&family=Poppins:wght@400;500;600;700&display=swap"
     rel="stylesheet">
 
-    <!-- BOX ICONS -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script src="https://kit.fontawesome.com/873abd78fb.js" crossorigin="anonymous"></script>
-    <!-- Js -->
-    <script src="JS/main.js"></script>
+  <!-- BOX ICONS -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://kit.fontawesome.com/873abd78fb.js" crossorigin="anonymous"></script>
+  <!-- Js -->
+  <script src="JS/main.js"></script>
 </head>
 
 <body>
@@ -29,98 +30,34 @@
   <!-- NAVBAR -->
   <div class="nav-wrapper">
     <div class="container">
-        <div class="nav">
-            <a href="#" class="logo">
-                <i class='bx bxs-bookmark-alt bx-tada-hover' style="color: #FFF67E;"></i><span
-                    class="main-color">R</span>ead<span class="main-color">R</span>over
-            </a>
-            <ul class="nav-menu" id="nav-menu">
-                <li><a href="#">Home</a></li>
-                <li onclick="genreMenu()"><a href="#" class="bx-tada-hover">Genre
-                        <i class='bx bx-xm bx-chevron-down bx-tada-hover'></i>
-                    </a>
-                    <div class="genre-wrap" id="genMenu">
-                        <div class="genre-menu">
-                            <div class="gen-info">
-                                <a href="bookshelf.html#fiction" class="genre-menu-link">
-                                    <i class="fa-regular fa-circle-dot" style="color: #179fd0;"></i>
-                                    <p>Fiction</p>
-                                    <span><i class='bx bx-chevron-right bx-flip-vertical'></i></span>
-                                </a>
-                                <a href="bookshelf.html#science-fiction" class="genre-menu-link">
-                                    <i class="fa-regular fa-circle-dot" style="color: #179fd0;"></i></i>
-                                    <p>Science Fiction</p>
-                                    <span><i class='bx bx-chevron-right bx-flip-vertical'></i></span>
-                                </a>
-                                <a href="bookshelf.html#child-literature" class="genre-menu-link">
-                                    <i class="fa-regular fa-circle-dot" style="color: #179fd0;"></i>
-                                    <p>Child Literature</p>
-                                    <span><i class='bx bx-chevron-right bx-flip-vertical'></i></span>
-                                </a>
-                                <a href="bookshelf.html#adult-literature" class="genre-menu-link">
-                                    <i class="fa-regular fa-circle-dot" style="color: #179fd0;"></i></i>
-                                    <p>Adult Literature</p>
-                                    <span><i class='bx bx-chevron-right bx-flip-vertical'></i></span>
-                                </a>
-                                <a href="bookshelf.html#drama" class="genre-menu-link">
-                                    <i class="fa-regular fa-circle-dot" style="color: #179fd0;"></i>
-                                    <p>Drama</p>
-                                    <span><i class='bx bx-chevron-right bx-flip-vertical'></i></span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li><a href="bookshelf.html">Bookshelf</a></li>
-                <li class="search">
-                    <form action="">
-                        <input type="search" placeholder="Coming Soon ...">
-                        <a href="#"><i class="fa fa-search"></i></a>
-                    </form>
-                </li>
-                <li>
-                    <a href="#" class="btn btn-hover" onclick="profileMenu()">
-                        <span><i class="fa-solid fa-circle-user fa-2xl"></i></span>
-                        <div class="profile-wrap" id="subMenu">
-                            <div class="profile-menu">
-                                <div class="user-info">
-                                    <a href="comingsoon.html" class="profile-menu-link">
-                                        <i class='bx bxs-user' style='color:#b4b6c9'></i>
-                                        <p>Your Profile</p>
-                                        <span><i class='bx bx-chevron-right bx-flip-vertical'></i></span>
-                                    </a>
-                                    <a href="bookshelf.html" class="profile-menu-link">
-                                        <i class='bx bxs-book-open' style='color:#f9950a'></i>
-                                        <p>All Books</p>
-                                        <span><i class='bx bx-chevron-right bx-flip-vertical'></i></span>
-                                    </a>
-                                    <a href="comingsoon.html" class="profile-menu-link">
-                                        <i class='bx bxs-book-heart' style='color:#2136f7'></i>
-                                        <p>Wishlist</p>
-                                        <span><i class='bx bx-chevron-right bx-flip-vertical'></i></span>
-                                    </a>
-                                    <a href="comingsoon.html" class="profile-menu-link">
-                                        <i class='bx bx-log-out-circle bx-flip-vertical' style='color:#fd0000'></i>
-                                        <p>logout</p>
-                                        <span><i class='bx bx-chevron-right bx-flip-vertical'></i></span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <button class="log"><a href="login.html">Log In / Sign Up</a></button>
-                </li>
-            </ul>
-            <!-- MOBILE MENU TOGGLE -->
-            <div class="hamburger-menu" id="hamburger-menu">
-                <div class="hamburger"></div>
-            </div>
+      <div class="nav">
+        <a href="index.html" class="logo">
+          <i class='bx bxs-bookmark-alt bx-tada-hover' style="color: #FFF67E;"></i>ReadRover
+        </a>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#fiction" class="navbar-link" data-navlink>FICTION</a></li>
+          <li>
+            <a href="#science-fiction" class="navbar-link" data-navlink>SCIENCE FICTION</a>
+          </li>
+          <li>
+            <a href="#child-literature" class="navbar-link" data-navlink>CHILD LITERATURE</a>
+          </li>
+          <li>
+            <a href="#adult-literature" class="navbar-link" data-navlink>ADULT LITERATURE</a>
+          </li>
+          <li>
+            <a href="#drama" class="navbar-link" data-navlink>DRAMA</a>
+          </li>
+        </ul>
+        <!-- MOBILE MENU TOGGLE -->
+        <div class="hamburger-menu" id="hamburger-menu">
+          <div class="hamburger"></div>
         </div>
+      </div>
     </div>
-</div>
-<!-- END NAV -->
+  </div>
+  <!-- END NAV -->
 
   <!-- FICTION -->
   <section class="section explore" id="fiction">
@@ -129,7 +66,7 @@
       <div class="title-wrapper">
         <h2 class="h2 section-title">Fiction</h2>
 
-        <a href="#" class="btn-link">
+        <a href="comingsoonbook.html" class="btn-link">
           <span>More</span>
 
           <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
@@ -157,7 +94,7 @@
               <button onclick="window.location.href='Books/b6.html'"><i class="bx bxs-right-arrow"></i></button>
               <button><i class="bx bxs-heart"></i></button>
             </div>
-          </div>          
+          </div>
         </li>
 
         <li>
@@ -289,7 +226,7 @@
               <button onclick="window.location.href='Books/b15.html'"><i class="bx bxs-right-arrow"></i></button>
               <button><i class="bx bxs-heart"></i></button>
             </div>
-          </div>          
+          </div>
         </li>
 
         <li>
@@ -327,7 +264,7 @@
       <div class="title-wrapper">
         <h2 class="h2 section-title">Science Fiction</h2>
 
-        <a href="#" class="btn-link">
+        <a href="comingsoonbook.html" class="btn-link">
           <span>More</span>
 
           <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
@@ -525,7 +462,7 @@
       <div class="title-wrapper">
         <h2 class="h2 section-title">Child Literature</h2>
 
-        <a href="#" class="btn-link">
+        <a href="comingsoonbook.html" class="btn-link">
           <span>More</span>
 
           <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
@@ -723,7 +660,7 @@
       <div class="title-wrapper">
         <h2 class="h2 section-title">Adult Literature</h2>
 
-        <a href="#" class="btn-link">
+        <a href="comingsoonbook.html" class="btn-link">
           <span>More</span>
 
           <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
@@ -741,7 +678,7 @@
             </figure>
 
             <h3 class="h3 card-title">
-              <a href="Books/b27.html">A way of life  </a>
+              <a href="Books/b27.html">A way of life </a>
             </h3>
 
             <span class="card-author">
@@ -921,7 +858,7 @@
       <div class="title-wrapper">
         <h2 class="h2 section-title">Drama</h2>
 
-        <a href="#" class="btn-link">
+        <a href="comingsoonbook.html" class="btn-link">
           <span>More</span>
 
           <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>

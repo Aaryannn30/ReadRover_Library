@@ -43,6 +43,7 @@ header h1 {
 
 /* Footer styles */
 footer {
+    position:absolute;
     background-color: #007bff;
     color: #fff;
     text-align: center;
