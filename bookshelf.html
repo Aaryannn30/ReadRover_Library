@@ -4,11 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-
+  <title>ReadRover - Genre</title>
   <!-- Title Icon -->
   <link rel="shortcut icon" type="x-icon" href="Books/images/Title-Icon/book-alt-solid-24.png">
-  
   <!-- css link  -->
   <link rel="stylesheet" href="css/bookshelf.css">
 
@@ -19,57 +17,47 @@
     href="https://fonts.googleapis.com/css2?family=Jost:wght@600;900&family=Poppins:wght@400;500;600;700&display=swap"
     rel="stylesheet">
 
-    <!-- BOX ICONS -->
-    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+  <!-- BOX ICONS -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://kit.fontawesome.com/873abd78fb.js" crossorigin="anonymous"></script>
+  <!-- Js -->
+  <script src="JS/main.js"></script>
 </head>
 
 <body>
 
   <!-- HEADER -->
-  <!-- NAV -->
-  <header class="header" data-header>
+  <!-- NAVBAR -->
+  <div class="nav-wrapper">
     <div class="container">
-
-      <div class="overlay" data-overlay></div>
-
-      <nav class="navbar" data-navbar>
-
-        <div class="navbar-top">
-          <p class="navbar-title">Menu</p>
-
-          <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
-            <ion-icon name="close-circle-outline"></ion-icon>
-          </button>
-        </div>
-
-        <ul class="navbar-list">
-
-
-          <li>
-            <a href="#fiction" class="navbar-link" data-navlink>FICTION</a>
-          </li>
-
+      <div class="nav">
+        <a href="index.html" class="logo">
+          <i class='bx bxs-bookmark-alt bx-tada-hover' style="color: #FFF67E;"></i>ReadRover
+        </a>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#fiction" class="navbar-link" data-navlink>FICTION</a></li>
           <li>
             <a href="#science-fiction" class="navbar-link" data-navlink>SCIENCE FICTION</a>
           </li>
-
           <li>
             <a href="#child-literature" class="navbar-link" data-navlink>CHILD LITERATURE</a>
           </li>
-
           <li>
             <a href="#adult-literature" class="navbar-link" data-navlink>ADULT LITERATURE</a>
           </li>
-
           <li>
             <a href="#drama" class="navbar-link" data-navlink>DRAMA</a>
           </li>
-
         </ul>
-
-      </nav>
+        <!-- MOBILE MENU TOGGLE -->
+        <div class="hamburger-menu" id="hamburger-menu">
+          <div class="hamburger"></div>
+        </div>
+      </div>
     </div>
-  </header>
+  </div>
+  <!-- END NAV -->
 
   <!-- FICTION -->
   <section class="section explore" id="fiction">
@@ -78,7 +66,7 @@
       <div class="title-wrapper">
         <h2 class="h2 section-title">Fiction</h2>
 
-        <a href="#" class="btn-link">
+        <a href="comingsoonbook.html" class="btn-link">
           <span>More</span>
 
           <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
@@ -106,7 +94,7 @@
               <button onclick="window.location.href='Books/b6.html'"><i class="bx bxs-right-arrow"></i></button>
               <button><i class="bx bxs-heart"></i></button>
             </div>
-          </div>          
+          </div>
         </li>
 
         <li>
@@ -238,7 +226,7 @@
               <button onclick="window.location.href='Books/b15.html'"><i class="bx bxs-right-arrow"></i></button>
               <button><i class="bx bxs-heart"></i></button>
             </div>
-          </div>          
+          </div>
         </li>
 
         <li>
@@ -276,7 +264,7 @@
       <div class="title-wrapper">
         <h2 class="h2 section-title">Science Fiction</h2>
 
-        <a href="#" class="btn-link">
+        <a href="comingsoonbook.html" class="btn-link">
           <span>More</span>
 
           <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
@@ -474,7 +462,7 @@
       <div class="title-wrapper">
         <h2 class="h2 section-title">Child Literature</h2>
 
-        <a href="#" class="btn-link">
+        <a href="comingsoonbook.html" class="btn-link">
           <span>More</span>
 
           <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
@@ -672,7 +660,7 @@
       <div class="title-wrapper">
         <h2 class="h2 section-title">Adult Literature</h2>
 
-        <a href="#" class="btn-link">
+        <a href="comingsoonbook.html" class="btn-link">
           <span>More</span>
 
           <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
@@ -690,7 +678,7 @@
             </figure>
 
             <h3 class="h3 card-title">
-              <a href="Books/b27.html">A way of life  </a>
+              <a href="Books/b27.html">A way of life </a>
             </h3>
 
             <span class="card-author">
@@ -870,7 +858,7 @@
       <div class="title-wrapper">
         <h2 class="h2 section-title">Drama</h2>
 
-        <a href="#" class="btn-link">
+        <a href="comingsoonbook.html" class="btn-link">
           <span>More</span>
 
           <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>

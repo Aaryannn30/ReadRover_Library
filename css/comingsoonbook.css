@@ -9,7 +9,7 @@
 }
 
 body{
-    background-image: url(img/profile.png);    
+    background-image: url(img/bookbg.png);    
     background-repeat: no-repeat;   
     background-size: cover;
     backdrop-filter: blur(5px);
@@ -35,8 +35,8 @@ body{
 }
 
 .container header {
-    font-size: 60px;
-    color: #fff;
+    font-size: 60px;    
+    color: #ffffff;
     font-weight: 600;
     text-align: center;
 }
@@ -44,7 +44,7 @@ body{
 .container p {
     font-size: 16px;
     font-weight: 400;
-    color: #fff;
+    color: #ffffff;
     max-width: 550px;
     text-align: center;
 }
