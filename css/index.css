@@ -836,6 +836,11 @@ ul {
     .item-content-wraper {
         width: 50%;
     }
+    .main-slide-item-content .deslide-poster {
+        display: inline-block;
+        top: -95px;
+        left: 400px;
+    }
 }
 
 @media only screen and (max-width: 850px) {
@@ -887,6 +892,7 @@ ul {
         height: 100vh;
         padding: 20px;
         transition: 0.3s ease-in-out;
+        font-size: 20px;
     }
 
     .nav-menu li {
@@ -917,5 +923,37 @@ ul {
         width: 210px;
         cursor: pointer;
     }
-    
+
+    .nav .m 
+    {   
+        display: none;
+    }
+    li .log {
+        background-color: #BC6FF1;
+        margin-left: 18px;
+        margin-right: 15px;
+    }
+    .main-slide-item-content .deslide-poster {
+        display: inline-block;
+        top: -95px;
+        left: 200px;
+        /* transform: scale(1.2); */
+        transform: rotate(15deg);
+        border: 20px solid #fff;
+        box-shadow: 0 30px 30px rgba(0, 0, 0, .2);
+        width: 500px;
+        height: 100px;
+        margin-top: 40px;
+        padding-bottom: 140%;
+        position: absolute;
+        overflow: hidden;
+        background: #eee;
+        opacity: 1;
+    }
+
+    .delay-info1
+    {
+        width:190px;
+        font-size: 20px;
+    }
 }
