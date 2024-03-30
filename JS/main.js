@@ -35,30 +35,6 @@ $(document).ready(() => {
             }
         }
     })
-
-    // JavaScript to handle adding books to the wishlist
-    $(document).ready(() => {
-        $('.add-to-wishlist').click(function (event) {
-            event.preventDefault();
-            var bookId = $(this).data('book-id');
-            addToWishlist(bookId);
-        });
-
-        function addToWishlist(bookId) {
-            // Example: Send an AJAX request to add the book to the wishlist
-            $.ajax({
-                url: '/wishlist/add',
-                type: 'POST',
-                data: { bookId: bookId },
-                success: function (response) {
-                    alert('Book added to wishlist!');
-                },
-                error: function (xhr, status, error) {
-                    console.error('Error adding book to wishlist:', error);
-                }
-            });
-        }
-    });
 })
 
 function profileMenu() {
