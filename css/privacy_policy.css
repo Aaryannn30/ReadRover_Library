@@ -31,6 +31,18 @@ header h1 {
   margin: 0;
   font-size: 24px;
 }
+.content .one
+{
+  font-weight: bold;
+  font-size: 30px;
+  font-style: normal;
+  padding-left: 20px;
+}
+.content .two 
+{
+  font-size: 25px;
+  padding-left: 20px;
+}
 
 footer {
   background-color: #007bff;
