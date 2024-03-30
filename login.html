@@ -6,18 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Register Form - CodeCraftedWeb</title>
     <link rel="stylesheet" href="css/login.css">
-    <script>
-        function validation()
-        {
-            e=document.getElementById("e").value;
-            pat_e=/^\w+([\.-]?\w+)*@\w+([\.-]?\w{2,3})(\.\w{2,3})$/;
-
-            if(!pat_e.test(e))
-            {
-                alert("Incorrect Email id");
-            }
-        }
-    </script>
+    <style src="user.js"></style>  
 </head>
 <body>
     <div class="bg"></div>
@@ -25,31 +14,25 @@
         <div class="main">
             <input type="checkbox" id="chk" aria-hidden="true">
             <div class="login">
-                <button class="button">&times;</button>
                 <form class="form">
                     <label for="chk" aria-hidden="true">Log in</label>
                     <input class="input" type="email" name="email" placeholder="Email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
                     <input class="input" type="password" name="pswd" placeholder="Password" required pattern=".{8,}">
-                    <button>Log in</button>
-                    <input class="input" type="email" name="email" placeholder="Email" id="e" required>
-                    <input class="input" type="password" name="pswd" placeholder="Password" required>
-                    <button onclick="validation()">Log in</button>
+                    <button onclick="window.location.href='index.html'">Log in</button>
                 </form>
             </div>
             <div class="register">
-                <form class="form">
+                <form class="form" onsubmit="storeinfo(this)">
                     <label for="chk" aria-hidden="true">Sign Up</label>
                     <input class="input" type="text" name="txt" placeholder="Username" required>
-                    <input class="input" type="email" name="email" placeholder="Email" id="e" required>
+                    <input class="input" type="email" name="email" placeholder="Email" required>
                     <input class="input" type="password" name="pswd" placeholder="Password" required>
-                    <button onclick="validation()">Sign Up</button>
+                    <button type="submit">Sign Up</button>
                 </form>
             </div>
         </div>
     </div>
 
-
-    <script src="JS/signup.js"></script>
 </body>
 
 </html> -->

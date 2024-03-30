@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Register Form - CodeCraftedWeb</title>
+    <link rel="stylesheet" href="css/login.css">
+    <style src="user.js"></style>  
+
     <link rel="stylesheet" href="css/signup.css">                             
     <script>
         function validation()
@@ -18,6 +21,7 @@
             }
         }
     </script>
+
 </head>
 <body>
     <div class="bg"></div>
@@ -28,15 +32,21 @@
                 <button class="button" onclick="document.close()" src="index.html">&times;</button>
                 <form class="form">
                     <label for="chk" aria-hidden="true">Sign Up</label>
+
+                    <input class="input" type="email" name="email" placeholder="Email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+                    <input class="input" type="password" name="pswd" placeholder="Password" required pattern=".{8,}">
+                    <button>Sign up</button>
                     <input class="input" type="text" name="txt" placeholder="Username" required>
                     <input class="input" type="email" name="email" placeholder="Email" id="e" required>
                     <input class="input" type="password" name="pswd" placeholder="Password" required>
-                    <button onclick="validation()" onclick="window.location.href='index.html'">Sign Up</button>
+                    <button onclick="validation()">Sign Up</button>
+
                 </form>
             </div>
             <div class="register">
-                <form class="form">
-                    <label for="chk" aria-hidden="true">Log In</label>
+                <form class="form" onsubmit="storeinfo(this)">
+                    <label for="chk" aria-hidden="true">log in</label>
+                    <input class="input" type="text" name="txt" placeholder="Username" required>
                     <input class="input" type="email" name="email" placeholder="Email" required>
                     <!-- <input class="input" type="password" name="pswd" placeholder="Password" required> -->
                     <button>Log in</button>
