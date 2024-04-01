@@ -826,7 +826,7 @@ ul {
 
 /* Bounce Section */
 .main-bounce {
-    background-color: #160040;
+    background-color: #411E8F;
     display: flex;
     margin-bottom: -20px;
     padding: 0px 60px;
@@ -898,7 +898,7 @@ ul {
 
 /* RESPONSIVE */
 
-@media only screen and (max-width: 1280px) and (max-width:1025px){
+@media only screen and (max-width: 1280px){
     html {
         font-size: 14px;
     }
@@ -1007,6 +1007,10 @@ ul {
     }
 
     .nav .m {
+        display: none;
+    }
+
+    .genrehide{
         display: none;
     }
 

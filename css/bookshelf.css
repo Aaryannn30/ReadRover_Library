@@ -186,6 +186,7 @@ li .sign {
   margin-right: -20px;
 }
 
+
 /* Hamburger menu for Responsive Windows */
 .hamburger-menu {
   --size: 30px;
@@ -716,6 +717,7 @@ ul {
     transform: scale(1.1);
   }
 
+  
 }
 
 

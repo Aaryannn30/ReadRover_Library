@@ -8,7 +8,11 @@
 body {
     background-color: aliceblue;
 }
-
+.head{
+    background-color:#892CDC ;
+    width: 100%;
+    text-align: center;
+}
 .card-img-top {
     border-radius: 50%;
     height: 150px !important;
