@@ -656,6 +656,7 @@ form:hover a .fa {
 }
 
 .book-info button {
+    z-index: 101;
     align-items: centers;
     position: relative;
     background-color: #ffc107;
