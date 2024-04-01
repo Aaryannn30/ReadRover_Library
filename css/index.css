@@ -618,7 +618,7 @@ form:hover a .fa {
     left: 0;
     right: 0;
     bottom: 0;
-    transition: all .5s ease 0s;    
+    transition: all .5s ease 0s;
 }
 
 /*for Trending/Recommended Books Slider*/
@@ -898,7 +898,7 @@ ul {
 
 /* RESPONSIVE */
 
-@media only screen and (max-width: 1280px){
+@media only screen and (max-width: 1280px) {
     html {
         font-size: 14px;
     }
@@ -920,6 +920,45 @@ ul {
     .footer-col h4::before {
         width: 50px;
         margin: 0 10px 8px 0;
+    }
+
+    .main-bounce {
+        margin-bottom: 0px;
+        padding: 5px 20px;
+    }
+
+    .main-bounce1 {
+        margin-bottom: -10px;
+        padding: 0px 10px;
+    }
+
+    .bounceimg {
+        margin: 10px -30px;
+        width: 220%;
+        float: right;
+    }
+
+    .bounceimg1 {
+        margin: 5px 5px;
+        width: 110%;
+        float: left;
+    }
+
+    .bouncetext {
+        margin: 0px 10px 20px 30px;
+    }
+
+    .bouncetext1 {
+        margin: 0px 10px 20px 40px;
+    }
+
+    .bouncehead {
+        font-size: 35px;
+        padding: 0px;
+    }
+
+    .bouncepara {
+        font-size: 20px;
     }
 }
 
@@ -1010,7 +1049,7 @@ ul {
         display: none;
     }
 
-    .genrehide{
+    .genrehide {
         display: none;
     }
 
@@ -1023,7 +1062,7 @@ ul {
     .section-header {
         margin-top: 10px;
         margin-left: 25px;
-        padding-left: 10px;               
+        padding-left: 10px;
     }
 
     .main-slide-item-content .deslide-poster {
@@ -1049,12 +1088,12 @@ ul {
         font-size: 15px;
     }
 
-    .main-bounce {        
+    .main-bounce {
         margin-bottom: 0px;
         padding: 5px 20px;
     }
 
-    .main-bounce1 {                
+    .main-bounce1 {
         margin-bottom: -10px;
         padding: 10px 10px;
     }
@@ -1072,11 +1111,11 @@ ul {
     }
 
     .bouncetext {
-        margin: 0px 10px 20px 0px;    
+        margin: 0px 10px 20px 0px;
     }
 
     .bouncetext1 {
-        margin: 0px 10px 20px 20px;        
+        margin: 0px 10px 20px 20px;
     }
 
     .bouncehead {
@@ -1089,78 +1128,78 @@ ul {
     }
 }
 
-@media only screen and (max-width: 431px) {
+@media only screen and (max-width: 431px) and (max-width:889px) {
     .delay-info1 {
         width: 150px;
         font-size: 7px;
     }
 
-    .main-slide-item-content {      
-        width: 100%;        
+    .main-slide-item-content {
+        width: 100%;
     }
-    
+
     .item-content-title {
         font-size: 1.5rem;
     }
 
     .item-content-wraper {
         padding-left: 4.5rem;
-        width: 100%;                
+        width: 100%;
     }
 
-    .main-slide-item-content .deslide-poster {    
+    .main-slide-item-content .deslide-poster {
         top: -5px;
-        left: 220px;     
+        left: 220px;
         width: 150px;
         height: 20px;
         margin-top: 40px;
         padding-top: 0px;
-        padding-bottom: 55%;       
+        padding-bottom: 55%;
     }
 
-    .book-poster .book-poster-img {        
+    .book-poster .book-poster-img {
         width: 500px;
-        height: 200px;                  
+        height: 200px;
     }
 
     .b.delay-info .btn,
     .delay-read .btn {
         margin-left: 0.1px;
         padding: 0.5rem 0.5rem;
-        border-radius: 20px;       
+        border-radius: 20px;
     }
 
-    .btn {        
-        padding: 0rem 1.5rem;        
+    .btn {
+        padding: 0rem 1.5rem;
         font-size: 0.5rem;
-        font-weight: 700;        
+        font-weight: 700;
         margin-left: -30px;
     }
 
     .section-header {
         margin-top: 10px;
         margin-left: 25px;
-        padding-left: 10px;               
+        padding-left: 10px;
     }
 
     .carousel-nav-center {
-        padding: 0.1%;        
+        padding: 0.1%;
     }
 
-    .carousel-nav-center .owl-nav .owl-prev {        
+    .carousel-nav-center .owl-nav .owl-prev {
         left: -25px;
     }
-    
-    .carousel-nav-center .owl-nav .owl-next {        
+
+    .carousel-nav-center .owl-nav .owl-next {
         right: 30px;
     }
 
-    .main-bounce {        
+    .main-bounce {
         margin-bottom: 0px;
         padding: 5px 20px;
     }
 
-    .main-bounce1 {                
+    .main-bounce1 {
         margin-bottom: -10px;
         padding: 10px 10px;
     }
@@ -1178,11 +1217,11 @@ ul {
     }
 
     .bouncetext {
-        margin: 0px 10px 20px 0px;    
+        margin: 0px 10px 20px 0px;
     }
 
     .bouncetext1 {
-        margin: 0px 10px 20px 20px;        
+        margin: 0px 10px 20px 20px;
     }
 
     .bouncehead {
@@ -1194,7 +1233,7 @@ ul {
         font-size: 8px;
     }
 
-    .footer {        
+    .footer {
         padding: 10px 10px;
     }
 
@@ -1205,11 +1244,11 @@ ul {
 
     .footer-col h4 {
         font-size: 15px;
-        margin-bottom: 15px;           
+        margin-bottom: 15px;
     }
 
     .footer-col ul li a {
-        font-size: 12px;        
+        font-size: 12px;
     }
 
     .footer-col .social-links a {

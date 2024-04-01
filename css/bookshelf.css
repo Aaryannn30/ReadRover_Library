@@ -118,7 +118,7 @@ a {
 }
 
 .nav-menu a:hover {
-  color:#d9fe00;
+  color: #d9fe00;
 }
 
 .nav-menu a.btn:hover,
@@ -373,7 +373,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-block-end: 50px; 
+  margin-block-end: 50px;
 }
 
 .btn-link {
@@ -516,19 +516,19 @@ body {
   margin-right: 10px;
   border-style: none;
   text-emphasis: none;
-  transition: background-color 0.3s;  
+  transition: background-color 0.3s;
   transition: color 0.3s;
 }
 
-.book-info button:hover{
-  color:white;
+.book-info button:hover {
+  color: white;
   background-color: var(--main-color);
 }
 
 /* Bounce Section */
-.main-bounce{
-  background-color:#160040;
-  display: flex;    
+.main-bounce {
+  background-color: #160040;
+  display: flex;
   margin-bottom: -20px;
   padding: 0px 40px;
 }
@@ -628,7 +628,7 @@ ul {
 /* responsive for larger than 375px screen */
 @media (min-width: 375px) {
 
-  .navbar-link{
+  .navbar-link {
     font-size: 14px;
   }
 
@@ -649,7 +649,7 @@ ul {
 /* responsive for larger than 575px screen */
 @media (min-width: 575px) and {
 
-  .navbar-link{
+  .navbar-link {
     font-size: 14px;
   }
 
@@ -697,11 +697,13 @@ ul {
 
 /* responsive for larger than 768px screen */
 @media (min-width: 768px) {
-  .navbar-link , .nav-menu li{    
+
+  .navbar-link,
+  .nav-menu li {
     font-size: 14px;
   }
 
-  .nav-menu li a{
+  .nav-menu li a {
     padding-left: 10px;
   }
 
@@ -717,7 +719,7 @@ ul {
     transform: scale(1.1);
   }
 
-  
+
 }
 
 
@@ -739,7 +741,9 @@ ul {
 
 /* /responsive for larger than 1200px screen */
 @media (min-width: 1200px) {
-  .navbar-link , .nav-menu li{    
+
+  .navbar-link,
+  .nav-menu li {
     font-size: 16px;
   }
 
@@ -783,6 +787,7 @@ ul {
 
 
 }
+
 /* ---------------------------------------------------- */
 @media only screen and (max-width: 850px) {
   .hamburger-menu {
