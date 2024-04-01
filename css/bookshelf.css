@@ -345,11 +345,7 @@ body {
   padding-inline: 25px;
 }
 
-
-
-.h1,
-.h2,
-.h3 {
+.h1,.h2,.h3 {
   color: #FAF0E6;
   font-family: var(--ff-jost);
 }
@@ -525,14 +521,6 @@ body {
   background-color: var(--main-color);
 }
 
-/* Bounce Section */
-.main-bounce {
-  background-color: #160040;
-  display: flex;
-  margin-bottom: -20px;
-  padding: 0px 40px;
-}
-
 /* FOOTER */
 
 .footer .container {
@@ -647,7 +635,7 @@ ul {
 }
 
 /* responsive for larger than 575px screen */
-@media (min-width: 575px) and {
+@media (min-width: 575px) {
 
   .navbar-link {
     font-size: 14px;
@@ -665,33 +653,7 @@ ul {
   .explore-card:hover .card-banner {
     transform: scale(1.1);
   }
-
-  .hamburger-menu {
-    display: grid;
-  }
-
-  .nav-menu {
-    /* display: none; */
-    position: absolute;
-    top: 100%;
-    left: -100%;
-    background-color: #000000;
-    flex-direction: column;
-    width: 80%;
-    height: 100vh;
-    padding: 20px;
-    transition: 0.3s ease-in-out;
-    font-size: 20px;
-  }
-
-  .nav-menu li {
-    margin: 10px 30px;
-  }
-
-  .nav-menu.active {
-    left: 0;
-  }
-
+  
 }
 
 
@@ -787,7 +749,7 @@ ul {
 
 
 }
-
+/* 
 /* ---------------------------------------------------- */
 @media only screen and (max-width: 850px) {
   .hamburger-menu {
