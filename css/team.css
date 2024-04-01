@@ -6,11 +6,12 @@
 }
 
 body {
-    background-color: aliceblue;
+    background-color: #101010;
 }
 .head{
-    background-color:#892CDC ;
-    width: 100%;
+    background-color: #310a5d;
+    color: #fff;
+    padding: 20px;
     text-align: center;
 }
 .card-img-top {
@@ -30,7 +31,7 @@ body {
 }
 
 .card:hover {
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    box-shadow: rgba(255, 255, 255, 0.8) 0px 3px 6px, rgba(255, 255, 255, 0.8) 0px 3px 6px;
 
 }
 
@@ -40,6 +41,17 @@ body {
 
 .bi {
     font-size: 25px;
+}
+
+footer {
+    position:absolute;
+    background-color: #310a5d;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+    font-family: Arial, sans-serif;
 }
 
 @media only screen and (max-width: 600px) {

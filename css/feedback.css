@@ -1,5 +1,5 @@
 body {
-	background: #000;
+	background: #101010;
 }
 
 .button-box {
@@ -29,6 +29,11 @@ body {
 	background: #e67e22;
 	border-radius: 30px;
 	transition: .5s;
+}
+
+textarea{
+	margin-left: 600px;
+	padding-right:100px ;
 }
 
 .f {

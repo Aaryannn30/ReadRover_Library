@@ -1,10 +1,8 @@
-
-
 /* Resetting default margins and paddings */
 
-  
- 
-  
+
+
+
 /* Reset default margin and padding */
 * {
   margin: 0;
@@ -15,13 +13,13 @@
 /* Body styles */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
+  background-color: #101010;
+  color: #ffffff;
 }
 
 /* Header styles */
 header {
-  background-color: #007bff;
+  background-color: #310a5d;
   color: #fff;
   padding: 20px;
   text-align: center;
@@ -31,21 +29,21 @@ header h1 {
   margin: 0;
   font-size: 24px;
 }
-.content .one
-{
+
+.content .one {
   font-weight: bold;
   font-size: 30px;
   font-style: normal;
   padding-left: 20px;
 }
-.content .two 
-{
+
+.content .two {
   font-size: 25px;
   padding-left: 20px;
 }
 
 footer {
-  background-color: #007bff;
+  background-color: #310a5d;
   color: #fff;
   text-align: center;
   padding: 10px;
