@@ -79,8 +79,6 @@ Here is a preview of the **ReadRover** website:
 
 *Bookshelf Page*
 
-> You can replace the `path-to-screenshot/` with the actual path to your screenshots in the project folder.
-
 ## License 📄
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
