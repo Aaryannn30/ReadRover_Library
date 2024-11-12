@@ -71,7 +71,7 @@ The footer of each page includes several important links:
 
 Here is a preview of the **ReadRover** website:
 
-![Home Page](path-to-screenshot/homepage.png)
+![Home Page](https://github.com/Aaryannn30/ReadRover_Library/blob/main/ReadRoverhome.gif)
 *Home Page*
 
 ![Bookshelf Page](path-to-screenshot/bookshelf.png)
