@@ -30,8 +30,8 @@ Welcome to **ReadRover**! 🚀 A simple and user-friendly library management sys
 - Navigation to the bookshelf and other pages.
 
 ### 2. **Bookshelf** 📚
-- A collection of books with features like sorting and searching.
-- Users can view books by categories or search for specific titles.
+- A collection of books with features like genre selectivity
+- Users can view books by categories
 
 ### Footer Pages 📜
 The footer of each page includes several important links:
