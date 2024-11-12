@@ -55,7 +55,7 @@ The footer of each page includes several important links:
 
 1. Clone this repository:
     ```bash
-    git clone https://github.com/your-username/ReadRover.git
+    git clone https://github.com/Aaryannn30/ReadRover_Library.git
     ```
 
 2. Navigate to the project folder:
