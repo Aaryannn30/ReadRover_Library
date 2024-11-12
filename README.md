@@ -72,9 +72,11 @@ The footer of each page includes several important links:
 Here is a preview of the **ReadRover** website:
 
 ![Home Page](https://github.com/Aaryannn30/ReadRover_Library/blob/main/ReadRoverhome.gif)
+
 *Home Page*
 
 ![Bookshelf Page](path-to-screenshot/bookshelf.png)
+
 *Bookshelf Page*
 
 > You can replace the `path-to-screenshot/` with the actual path to your screenshots in the project folder.
