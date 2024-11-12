@@ -75,7 +75,7 @@ Here is a preview of the **ReadRover** website:
 
 *Home Page*
 
-![Bookshelf Page]([https://github.com/Aaryannn30/ReadRover_Library/blob/main/RRShelf.gif](https://github.com/Aaryannn30/ReadRover_Library/blob/main/RRShelf.gif))
+![Bookshelf Page](https://github.com/Aaryannn30/ReadRover_Library/blob/main/RRShelf.gif)
 
 *Bookshelf Page*
 
