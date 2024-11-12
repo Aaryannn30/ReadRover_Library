@@ -67,7 +67,7 @@ The footer of each page includes several important links:
 
 4. Customize or add more features as needed! ✨
 
-## Screenshots 📸
+## Preview 📸
 
 Here is a preview of the **ReadRover** website:
 
@@ -75,7 +75,7 @@ Here is a preview of the **ReadRover** website:
 
 *Home Page*
 
-![Bookshelf Page](path-to-screenshot/bookshelf.png)
+![Bookshelf Page](https://github.com/Aaryannn30/ReadRover_Library/blob/main/RRshelf.gif)
 
 *Bookshelf Page*
 
