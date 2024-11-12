@@ -79,9 +79,6 @@ Here is a preview of the **ReadRover** website:
 
 *Bookshelf Page*
 
-## License 📄
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
