@@ -9,7 +9,6 @@ Welcome to **ReadRover**! 🚀 A simple and user-friendly library management sys
 - [Footer Links](#footer-links)
 - [Technologies Used](#technologies-used)
 - [Setup Instructions](#setup-instructions)
-- [License](#license)
 - [Screenshots](#screenshots)
 
 ## Overview 🌟
